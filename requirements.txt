@@ -1,0 +1,26 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+
+# NLP and Machine Learning
+transformers
+torch
+scikit-learn
+spacy
+spacy-transformers
+
+# Utilities
+numpy
+pandas
+
+# PDF Generation
+fpdf2
+
+# Environment & Config Handling
+python-dotenv
+
+# Optional (recommended) for CORS, debugging, templates
+jinja2
+aiofiles
+starlette
