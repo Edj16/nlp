@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContractAI — Chat Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="left-panel">
+
+            <h1 class="title">ContractAI — Chat Interface</h1>
+
+            <div class="tabs">
+                <button class="tab active" id="tabChat">Chat / Paste Contract</button>
+                <button class="tab" id="tabForm">Form Input</button>
+            </div>
+
+            <!-- CHAT MODE -->
+            <div id="chatMode" class="mode active-mode">
+                <div class="chat-message">
+                    Hi — I can help you write contracts. You can paste a full contract, or answer form fields. Which would you like?
+                </div>
+
+                <textarea id="userInput" class="input-area" placeholder="Paste full contract or type instructions (e.g. 'Rent my apartment 1 year ₱10,000/month')"></textarea>
+
+                <div class="buttons">
+                    <button id="parseBtn" class="primary">Parse & Generate</button>
+                    <button id="clearBtn" class="secondary">Clear</button>
+                </div>
+            </div>
+
+            <!-- FORM MODE -->
+            <div id="formMode" class="mode hidden">
+
+                <div class="chat-message">
+                    Hi — I can help you write contracts. You can paste a full contract, or answer form fields. Which would you like?
+                </div>
+
+                <div class="form-grid">
+
+                    <input id="partyA" class="input" placeholder="Party A (e.g. Juan Dela Cruz)">
+                    <input id="partyB" class="input" placeholder="Party B (e.g. Maria Santos)">
+
+                    <select id="contractType" class="input">
+          <option>Rental Agreement</option>
+          <option>Service Agreement</option>
+          <option>Sales Contract</option>
+          <option>Employment Contract</option>
+        </select>
+
+                    <input type="date" id="startDate" class="input">
+
+                    <input id="duration" class="input" placeholder="12">
+
+                    <div class="amount-box">
+                        <input id="amount" class="input" placeholder="Amount (e.g. 10,000)">
+                        <select id="currency" class="currency-select">
+            <option>PHP</option>
+            <option>USD</option>
+            <option>EUR</option>
+          </select>
+                    </div>
+
+                    <input id="paymentFreq" class="input" placeholder="Monthly">
+
+                    <input id="special" class="input" placeholder="Special clauses (optional)">
+                </div>
+
+                <div class="buttons">
+                    <button id="generateDraft" class="primary">Generate Draft</button>
+                    <button id="resetForm" class="secondary">Reset</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-panel">
+
+            <div class="card">
+                <h3>NLP Extraction</h3>
+                <p id="nlp">No extraction yet.</p>
+            </div>
+
+            <div class="card">
+                <h3>Suggested Clauses</h3>
+                <p id="clauses">No suggestions yet.</p>
+            </div>
+
+            <div class="card">
+                <h3>Risk Detection</h3>
+                <p id="risk">No immediate risks detected.</p>
+            </div>
+
+            <div class="card">
+                <h3>Legal Validation</h3>
+                <p id="validation">No validation issues found.</p>
+            </div>
+
+            <div class="card">
+                <h3>Contract Preview & Download</h3>
+                <textarea id="contractPreview" class="preview" readonly>No contract generated yet.</textarea>
+
+                <button id="exportBtn" class="export">Export PDF</button>
+                <button id="copyBtn" class="secondary small">Copy Text</button>
+                <button id="clearPreview" class="secondary small">Clear</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

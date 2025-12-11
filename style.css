@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+/* LEFT PANEL */
+
+.left-panel {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-top: 0;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #e3e3e3;
+}
+
+.tab.active {
+    background: #5a4bff;
+    color: white;
+}
+
+.mode.hidden {
+    display: none;
+}
+
+.active-mode {
+    display: block;
+}
+
+.chat-message {
+    padding: 10px 15px;
+    background: #eef1ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.input-area {
+    width: 100%;
+    min-height: 140px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.primary {
+    background: #00b578;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondary {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.small {
+    padding: 6px 12px;
+}
+
+
+/* FORM GRID */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.amount-box {
+    grid-column: 1 / span 2;
+    display: flex;
+    gap: 10px;
+}
+
+.currency-select {
+    width: 70px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+/* RIGHT PANEL */
+
+.right-panel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.preview {
+    width: 100%;
+    height: 140px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.export {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
