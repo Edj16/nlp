@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KontrataPH - LLaMA-Powered Contract Intelligence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <button id="newSessionBtn" class="new-session-btn">
+                    <i class="fas fa-plus"></i>
+                    <span>New Session</span>
+                </button>
+            </div>
+
+            <!-- Mode Buttons in Sidebar -->
+            <div class="sidebar-modes">
+                <button class="sidebar-mode-btn" data-mode="generate">
+                    <i class="fas fa-file-medical"></i>
+                    <span>Generate Contract</span>
+                </button>
+                <button class="sidebar-mode-btn" data-mode="analyze">
+                    <i class="fas fa-search"></i>
+                    <span>Analyze Contract</span>
+                </button>
+                <button class="sidebar-mode-btn" data-mode="evaluation">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>System Evaluation</span>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="sidebar-title">
+                    <span>Your chats</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="chats-list" id="chatsList">
+                    <!-- Previous sessions will be added here -->
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-info" id="userInfo">
+                    <div class="user-avatar">MR</div>
+                    <div class="user-details">
+                        <div class="user-name">Ma'am Ria</div>
+                        <div class="user-role">System Admin</div>
+                    </div>
+                </div>
+                
+                <!-- Profile Menu -->
+                <div class="profile-menu" id="profileMenu" style="display: none;">
+                    <button class="profile-menu-item">
+                        <i class="fas fa-user-edit"></i>
+                        <span>Edit profile</span>
+                    </button>
+                    <button class="profile-menu-item">
+                        <i class="fas fa-star"></i>
+                        <span>Upgrade plan</span>
+                    </button>
+                    <button class="profile-menu-item">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Personalization</span>
+                    </button>
+                    <button class="profile-menu-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </button>
+                    <button class="profile-menu-item">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help</span>
+                        <i class="fas fa-chevron-right ml-auto"></i>
+                    </button>
+                    <button class="profile-menu-item">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Log out</span>
+                    </button>
+                    <div class="profile-menu-footer">
+                        <div class="user-badge">
+                            <div class="user-badge-avatar">MR</div>
+                            <div class="user-badge-info">
+                                <div class="user-badge-name">Ma'am Ria</div>
+                                <div class="user-badge-plan">System Admin</div>
+                            </div>
+                        </div>
+                        <button class="upgrade-btn">Upgrade</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-top">
+                    <div class="header-left">
+                        <button id="toggleSidebarBtn" class="icon-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="logo-container">
+                            <div class="logo-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div class="logo-text">
+                                <h1>KontrataPH</h1>
+                                <p>LLaMA-Powered Contract Intelligence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Evaluation Panel -->
+            <div id="evaluationPanel" class="evaluation-panel" style="display: none;">
+                <div class="evaluation-container">
+                    <h3 class="evaluation-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Section 4: System Evaluation Dashboard
+                    </h3>
+                    
+                    <div class="evaluation-grid">
+                        <!-- 4.1 Functional Testing -->
+                        <div class="evaluation-card">
+                            <h4>4.1 Functional Testing</h4>
+                            <div class="test-items">
+                                <div class="test-item">
+                                    <div class="test-header">
+                                        <span>Input Handling</span>
+                                        <span class="test-score"><span id="inputHandlingPassed">10</span>/<span id="inputHandlingTotal">10</span></span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="inputHandlingProgress" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <div class="test-item">
+                                    <div class="test-header">
+                                        <span>Entity Extraction</span>
+                                        <span class="test-score"><span id="entityExtractionPassed">9</span>/<span id="entityExtractionTotal">10</span></span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="entityExtractionProgress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="test-item">
+                                    <div class="test-header">
+                                        <span>Contract Generation</span>
+                                        <span class="test-score"><span id="contractGenerationPassed">14</span>/<span id="contractGenerationTotal">15</span></span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="contractGenerationProgress" style="width: 93.33%"></div>
+                                    </div>
+                                </div>
+                                <div class="test-item">
+                                    <div class="test-header">
+                                        <span>Validation</span>
+                                        <span class="test-score"><span id="validationPassed">11</span>/<span id="validationTotal">12</span></span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="validationProgress" style="width: 91.67%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4.3 Quantitative Metrics -->
+                        <div class="evaluation-card">
+                            <h4>4.3 Quantitative Metrics</h4>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <span>Precision:</span>
+                                    <span class="metric-value success" id="precisionValue">0.0%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span>Recall:</span>
+                                    <span class="metric-value success" id="recallValue">0.0%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span>Error Rate:</span>
+                                    <span class="metric-value warning" id="errorRateValue">0.0%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span>Processing Time:</span>
+                                    <span class="metric-value" id="processingTimeValue">0.0s</span>
+                                </div>
+                            </div>
+                            <button id="recalculateMetricsBtn" class="btn-primary">Recalculate Metrics</button>
+                        </div>
+
+                        <!-- 4.2 User Acceptance -->
+                        <div class="evaluation-card">
+                            <h4>4.2 User Satisfaction</h4>
+                            <div class="satisfaction-list">
+                                <div class="satisfaction-item">
+                                    <span>Ease of Use:</span>
+                                    <div class="star-rating" id="easeOfUseRating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="satisfaction-item">
+                                    <span>Clarity:</span>
+                                    <div class="star-rating" id="clarityRating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="satisfaction-item">
+                                    <span>Output Quality:</span>
+                                    <div class="star-rating" id="outputQualityRating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="satisfaction-item">
+                                    <span>Overall:</span>
+                                    <div class="star-rating" id="overallRating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="submitFeedbackBtn" class="btn-success">Submit Feedback</button>
+                        </div>
+                    </div>
+
+                    <button id="generateReportBtn" class="btn-full-width">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Generate Full Evaluation Report</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages Area -->
+            <div class="messages-area" id="messagesArea">
+                <div class="messages-container" id="messagesContainer">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <!-- Mode Info Panels -->
+                    <div id="analyzeModeInfo" class="mode-info analyze" style="display: none;">
+                        <div class="mode-info-content">
+                            <i class="fas fa-search"></i>
+                            <span class="mode-info-title">Contract Analysis Mode</span>
+                            <span class="mode-info-desc">Upload a contract (PDF/TXT) to analyze for risks, missing clauses, and compliance issues.</span>
+                            <input type="file" id="fileInput" accept=".pdf,.txt,.doc,.docx" style="display: none;">
+                            <button id="uploadBtn" class="btn-upload">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload Contract</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="generateModeInfo" class="mode-info generate" style="display: none;">
+                        <div class="mode-info-content">
+                            <i class="fas fa-file-medical"></i>
+                            <span class="mode-info-title">Contract Generation Mode</span>
+                            <span class="mode-info-desc">Describe the contract you need (e.g., "Create an employment contract for a software developer")</span>
+                        </div>
+                    </div>
+
+                    <!-- Uploaded File Display -->
+                    <div id="uploadedFileDisplay" class="uploaded-file" style="display: none;">
+                        <i class="fas fa-file-text"></i>
+                        <span id="uploadedFileName"></span>
+                        <button id="removeFileBtn" class="remove-file-btn">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+
+                    <!-- Input Box -->
+                    <div class="input-box">
+                        <textarea 
+                            id="messageInput" 
+                            placeholder="Select Generate or Analyze mode above..."
+                            rows="2"
+                        ></textarea>
+                        <button id="sendBtn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="input-footer">
+                        Following your System Design: Input Module → LLaMA Processing → Generation/Analysis → Output → Evaluation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div id="feedbackModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3>User Acceptance Testing</h3>
+            <p>Please rate your experience with KontrataPH:</p>
+            
+            <div class="feedback-form">
+                <div class="feedback-item">
+                    <label>Ease of Use</label>
+                    <div class="star-input" data-rating="easeOfUse">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <label>Clarity of Suggestions</label>
+                    <div class="star-input" data-rating="clarityOfSuggestions">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <label>Output Quality</label>
+                    <div class="star-input" data-rating="outputQuality">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <label>Overall Satisfaction</label>
+                    <div class="star-input" data-rating="overallSatisfaction">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button id="cancelFeedbackBtn" class="btn-secondary">Cancel</button>
+                <button id="submitFeedbackModalBtn" class="btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
