@@ -1,0 +1,193 @@
+
+CONTRACT OF LEASE
+
+Philippine Civil Code (Republic Act No. 386)
+
+clause_function: introduction
+clause_text: This CONTRACT OF LEASE, made and entered into this ___day of August,
+2003 at the City of Makati, by and between: __________, of legal age, married and residing at ______,
+civil_code: Article 1643, Article 1687
+
+clause_function: parties
+clause_text:  and hereinafter referred to as the
+LESSOR, and __________, also of legal age, married and residing at _____, and hereinafter referred to as the LESSEE,
+civil_code: Article 1649
+
+clause_function: parties
+clause_text: WHEREAS, the LESSOR is the registered and absolute owner of a house and lot situated at _____;
+civil_code: Article 1651, Article 1169
+
+clause_function: Term of Lease
+clause_text: That the lease shall be for a period of one year from December 17, 2002 up to December 17,2003;
+civil_code: Article 1654, Article 1657
+
+clause_function: Rental Amount
+clause_text: That the LESSEE shall pay a monthly rental of FIFTY THOUSAND PESOS (P50,000.00), Philippine Currency, payable every 16th day of the month;
+civil_code: Article 1649
+
+clause_function: Security Deposit and Advance Payment
+clause_text: That the LESSEE upon ________________________________________________ PESOS
+(_______________) representing two (2) months deposit and one (1) month advance. That the
+deposit shall not be considered as payment for rental but will be reimbursed by the LESSOR
+upon the termination of this contract, unless the leased property suffers damages or the LESSEE has unpaid utility and water bills in which case, said bills and damages will be paid out of the deposit
+civil_code: Article 1651, Article 1169
+
+clause_function: Utilities Responsibility
+clause_text:
+Electric and water bills shall be for the account of the LESSEE, based on the monthly meter readings.
+civil_code: Article 1654, Article 1657
+
+clause_fcuntion: Use of Premises
+clause_text: The leased premises shall be devoted exclusively for residential purposes only.
+civil_code: Article 1657
+
+clause_function: Improvements and Alterations
+clause_text: All improvements require prior consent of the LESSOR, and any improvement that cannot be removed shall become the property of the LESSOR.
+civil_codE: Article 1678, Article 1661
+
+clause_function: Repairs and Damages
+clause_text: Expenses for repairs arising from willful and knowing damage caused by the LESSEE shall be shouldered by the LESSEE
+civil_code: Article 1654, Article 1657
+
+clause_function: Subleasing Prohibition
+clause_text: The leased premises shall not be subleased to any person or entity without the written consent of the LESSOR.
+civil_code: Article 1650
+
+clause_function: Failure to Surrender Premises
+clause_text: If the premises are not surrendered upon expiration of the lease, the LESSEE shall be liable for all damages suffered by the LESSOR.
+civil_code: Article 1673, Article 1167
+
+clause_function: Condition Upon Return
+clause_text: The LESSEE agrees to return the premises in good condition, subject only to reasonable wear and tear, without delay
+civil_code: Article 1665
+
+clause_function: Lessor’s Right to Offset Arrears
+clause_text: In case of unpaid rental arrears, the LESSOR may take possession of the LESSEE’s tangible and valuable property to offset the arrears without judicial action.
+civil_code: Article 1662, Article 2241
+
+clause_function: Abandonment of Premises
+clause_text: If the premises are abandoned for one (1) week without notice and while the LESSEE is in default, the LESSOR may consider the premises legally abandoned and take possession thereof.
+civil_code: Article 1673, Article 1658
+
+clause_function: Rental Escalation
+clause_text:The LESSOR reserves the right to increase the rental rate by ten percent (10%) after one (1) year if the contract is renewed by mutual agreement. 
+civil_code: Article 1306, Article 1643
+
+clause_function: Cleanliness and Conduct
+clause_text: The LESSEE is obliged to observe cleanliness and maintain a peaceful condition inside and outside the premises.
+civil_code: Article 1657, Article 1663
+
+clause_function: Compliance and Sanctions
+clause_text: The LESSEE warrants having read and understood the contract and agrees to comply; violations may result in ejectment and other legal sanctions.
+civil_code: Article 1159, Article 1673
+
+
+
+
+BUSINESS CONTRACT
+
+contract_type: participating business contract
+clause_function: Business name, Contact Name, Category, Email Address, Phone, 
+clause_type: input
+mandatory: yes
+required_response_type: textfield
+
+clause_function: 
+clause_text: By signing this Contract I, as the above-named business (“Business”), agree to be a participating Co-op Connections
+business and will give discounts to all Co-op Connections Cardholders as noted in the Co-op Connections brochure. I can
+provide whatever discount I want, as long as it is something that provides a real economic value to Cardholders. I have
+chosen the discount described below. 
+
+clause_function: Contract term
+clause_text: I will continue to offer this discount (or a better discount) for a minimum of one
+year, unless my local cooperative, Oneida-Madison Electric Cooperative Inc.,(“Local Co-op”) terminates this Contract
+as provided below or Touchstone Energy Cooperatives, Inc. (“Touchstone Energy”) either terminates the Co-op
+Connections program or Local Co-op’s participation in the program. This Contract is effective from the day I return a
+signed copy until the day it is terminated as described below.
+
+
+clause_function: Contract response
+clause_text: Check here if your business would like this agreement to automatically renew at the end of one year unless
+either party terminates this contract.
+required_response_type: checkbox
+mandatory: yes
+
+clause_function: 
+clause_text: After we receive your signed contract, we will mail your participating Co-op Connections package, which includes a
+window sticker to display in your business helping to identify you as a participating business.
+
+[
+  {
+    "clause_function": "parties_and_relationship",
+    "clause_text": "This Contract is between You and Local Co-op. Neither Touchstone Energy nor any Touchstone Energy® Cooperative (“Co-op” or “Co-ops”) is liable for financial or contractual responsibilities of holders of the Co-op Connections Card (“Card”). Further, nothing in this Contract shall be construed to establish a joint venture, partnership, agency, franchise, or employment relationship among Touchstone Energy, any Co-op and Business.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "liability_disclaimer",
+    "clause_text": "Neither Touchstone Energy nor any Co-op will be liable for your products or services or for any inaccuracy in your marketing materials.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "card_ownership",
+    "clause_text": "All Cards are the property of Touchstone Energy, and any unauthorized reproduction or misrepresentation of the Card is strictly prohibited.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "use_of_intellectual_property",
+    "clause_text": "Your marketing materials and advertisements will not use the name, trademark, or other intellectual property of Touchstone Energy or any Co-op without prior written approval.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "signage_requirement",
+    "clause_text": "You will post Co-op Connections signage as required by Touchstone Energy.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "termination_by_local_coop",
+    "clause_text": "Local Co-op can terminate this Contract on 30 days notice (or immediately if you commit any material breach, if your business is sold or changes ownership, if your local participating cooperative drops out of the Touchstone Energy Cooperatives program, or if you become the subject of any bankruptcy or insolvency proceeding).",
+    "mandatory": true
+  },
+  {
+    "clause_function": "termination_by_business",
+    "clause_text": "You can terminate this Contract at any time after one year on 30 days prior written notice.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "termination_by_touchstone",
+    "clause_text": "Touchstone Energy can terminate the Co-op Connections program at any time, or can terminate Local Co-op’s participation in the program, either of which event will terminate this Contract also.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "confidentiality",
+    "clause_text": "You, your employees, and your affiliates will maintain the confidentiality of any confidential information belonging to Touchstone Energy or Local Co-op and will not disclose it to any third party. Touchstone Energy and Local Co-op, their employees, and their affiliates will maintain the confidentiality of any confidential information belonging to Business and will not disclose it to any third party.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "indemnification",
+    "clause_text": "You agree to indemnify, defend and hold Touchstone Energy, Co-ops, and their affiliates and all of their employees, officers, directors and shareholders harmless against any and all losses, liabilities, damages, costs or other expenses or claims or counterclaims of third persons or entities related to this Contract, except for any such claims arising from Touchstone Energy’s or Local Co-op’s gross negligence or willful misconduct.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "governing_law_and_venue",
+    "clause_text": "This Contract is governed by the substantive laws of Virginia. Any action relating to this Contract must be brought in federal or state court located in Virginia.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "jury_trial_waiver",
+    "clause_text": "Each party waives its right to jury trial for any dispute relating to this Contract.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "modification_of_terms",
+    "clause_text": "Touchstone Energy can change any term of this Contract at any time by posting the change on any public section of the www.connections.coop Web site. Changes will be effective 30 days after posting to the Web site. Additional or updated terms may be posted at www.connections.coop, and those terms control even if they conflict with this writing.",
+    "mandatory": true
+  },
+  {
+    "clause_function": "trademark_and_ip_rights",
+    "clause_text": "Each party acknowledges the other’s exclusive ownership of, and right to use, its own trademarks, service marks, trade names, and copyrighted materials. Neither acquires any rights in the other’s trademarks, service marks, trade names, or copyrighted materials through this Contract. In connection with this Contract, neither party will use, or sell products bearing or comprised of, the other’s intellectual property without the owner’s prior written consent.",
+    "mandatory": true
+  }
+]
+
+
+

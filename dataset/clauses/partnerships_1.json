@@ -1,0 +1,36 @@
+[
+  {
+    "contract_type": "partnership",
+    "clause_function": "purpose",
+    "clause_text": "This Agreement is entered by Ana Reyes and Mark Villanueva for the purpose of forming a general partnership.",
+    "mandatory": true,
+    "entities": {
+      "partners": ["Ana Reyes", "Mark Villanueva"]
+    }
+  },
+  {
+    "contract_type": "partnership",
+    "clause_function": "capital_contribution",
+    "clause_text": "Each partner shall contribute PHP 100,000 as initial capital.",
+    "mandatory": true,
+    "entities": {
+      "amount": "PHP 100,000"
+    }
+  },
+  {
+    "contract_type": "partnership",
+    "clause_function": "profit_sharing",
+    "clause_text": "Profits and losses shall be shared equally.",
+    "mandatory": true,
+    "entities": {}
+  },
+  {
+    "contract_type": "partnership",
+    "clause_function": "term",
+    "clause_text": "This partnership shall commence on January 1, 2025.",
+    "mandatory": false,
+    "entities": {
+      "start_date": "January 1, 2025"
+    }
+  }
+]

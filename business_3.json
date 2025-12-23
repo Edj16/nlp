@@ -1,0 +1,324 @@
+{
+  "id": "business_associate_1.txt",
+  "contract_type": "business_associate_agreement",
+  "contract_title": "Business Associate Agreement (HIPAA)",
+  "clauses": {
+
+    "introduction": {
+      "clause_function": "contract_identification",
+      "clause_text": "This Business Associate Agreement is entered into as of [EFFECTIVE DATE] by and between [COVERED ENTITY] and [BUSINESS ASSOCIATE], collectively referred to as the Parties.",
+      "clause_type": "input",
+      "mandatory": true,
+      "entities": {
+        "effective_date": "",
+        "covered_entity_name": "",
+        "business_associate_name": "",
+        "party_definition": "Parties"
+      },
+      "legal_basis": {
+        "hipaa_reference": "45 C.F.R. Parts 160 and 164"
+      }
+    },
+
+    "whereas_covered_entity": {
+      "clause_function": "legal_status_declaration",
+      "clause_text": "Covered Entity is a Covered Entity as defined under HIPAA Privacy and Security Standards.",
+      "clause_type": "recital",
+      "mandatory": true,
+      "entities": {
+        "entity_type": "Covered Entity",
+        "regulatory_definition": "HIPAA"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §160.103"
+      }
+    },
+
+    "whereas_business_associate": {
+      "clause_function": "legal_status_declaration",
+      "clause_text": "Business Associate is a Business Associate as defined under HIPAA and may access, use, maintain or disclose PHI on behalf of Covered Entity.",
+      "clause_type": "recital",
+      "mandatory": true,
+      "entities": {
+        "entity_type": "Business Associate",
+        "data_type": "Protected Health Information (PHI)"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §160.103"
+      }
+    },
+
+    "whereas_hipaa_compliance": {
+      "clause_function": "compliance_intent",
+      "clause_text": "Business Associate must comply with HIPAA and agree in writing to mandatory provisions governing PHI use and disclosure.",
+      "clause_type": "recital",
+      "mandatory": true,
+      "entities": {
+        "compliance_scope": ["HIPAA", "Privacy Rule", "Security Rule"]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)"
+      }
+    },
+
+    "whereas_part2_optional": {
+      "clause_function": "conditional_regulatory_compliance",
+      "clause_text": "If applicable, Covered Entity operates a substance abuse treatment program governed by 42 C.F.R. Part 2.",
+      "clause_type": "conditional",
+      "mandatory": false,
+      "entities": {
+        "regulation": "42 C.F.R. Part 2",
+        "program_type": "Drug and Alcohol Treatment"
+      },
+      "legal_basis": {
+        "federal_statute": "42 U.S.C. §290dd-2"
+      }
+    },
+
+    "definitions": {
+      "clause_function": "term_definition",
+      "clause_text": "Terms not otherwise defined shall have the meanings assigned under HIPAA Privacy and Security Standards.",
+      "clause_type": "definitions",
+      "mandatory": true,
+      "entities": {
+        "reference_law": "HIPAA"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. Parts 160, 164"
+      }
+    },
+
+    "scope_of_phi": {
+      "clause_function": "data_scope_definition",
+      "clause_text": "All PHI disclosed, created, accessed, used, transmitted or maintained by Business Associate on behalf of Covered Entity shall be subject to this Agreement.",
+      "clause_type": "data_governance",
+      "mandatory": true,
+      "entities": {
+        "data_formats": ["paper", "oral", "audio", "electronic"],
+        "data_type": "PHI"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502"
+      }
+    },
+
+    "permitted_uses": {
+      "clause_function": "permitted_use_definition",
+      "clause_text": "Business Associate may use or disclose PHI solely to perform services for Covered Entity as permitted by this Agreement.",
+      "clause_type": "authorization",
+      "mandatory": true,
+      "entities": {
+        "authorized_purposes": "",
+        "service_reference": "Underlying service agreement"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)"
+      }
+    },
+
+    "administrative_uses": {
+      "clause_function": "secondary_use_authorization",
+      "clause_text": "Business Associate may use PHI for management, legal responsibilities, and data aggregation as permitted by law.",
+      "clause_type": "authorization",
+      "mandatory": true,
+      "entities": {
+        "secondary_purposes": [
+          "management",
+          "legal compliance",
+          "data aggregation"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)(4)"
+      }
+    },
+
+    "use_restrictions": {
+      "clause_function": "prohibited_use",
+      "clause_text": "Business Associate may not use or disclose PHI in any manner that would violate HIPAA or Covered Entity policies.",
+      "clause_type": "restriction",
+      "mandatory": true,
+      "entities": {
+        "restriction_basis": "Covered Entity Privacy Policy"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502"
+      }
+    },
+
+    "minimum_necessary": {
+      "clause_function": "data_minimization",
+      "clause_text": "Business Associate must comply with minimum necessary standards when using or disclosing PHI.",
+      "clause_type": "data_protection",
+      "mandatory": true,
+      "entities": {
+        "data_limitation_rule": "Minimum Necessary"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502(b)"
+      }
+    },
+
+    "safeguards": {
+      "clause_function": "security_obligation",
+      "clause_text": "Business Associate shall implement administrative, physical and technical safeguards to protect PHI.",
+      "clause_type": "security",
+      "mandatory": true,
+      "entities": {
+        "safeguard_types": ["administrative", "physical", "technical"]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.308–312"
+      }
+    },
+
+    "breach_reporting": {
+      "clause_function": "incident_reporting",
+      "clause_text": "Business Associate must report unauthorized use or disclosure of PHI within ten (10) days and immediately for electronic PHI incidents.",
+      "clause_type": "compliance",
+      "mandatory": true,
+      "entities": {
+        "reporting_deadline_days": 10,
+        "incident_type": "Breach of Unsecured PHI"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.410"
+      }
+    },
+
+    "subcontractors": {
+      "clause_function": "flow_down_obligations",
+      "clause_text": "Business Associate must ensure subcontractors agree in writing to the same PHI restrictions.",
+      "clause_type": "risk_management",
+      "mandatory": true,
+      "entities": {
+        "third_parties": ["agents", "subcontractors"]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502(e)(1)"
+      }
+    },
+
+    "individual_rights_support": {
+      "clause_function": "data_subject_rights_support",
+      "clause_text": "Business Associate shall support access, amendment and accounting of disclosures requests within ten (10) days.",
+      "clause_type": "compliance",
+      "mandatory": true,
+      "entities": {
+        "rights_supported": ["access", "amendment", "accounting"],
+        "response_deadline_days": 10
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §§164.524–528"
+      }
+    },
+
+    "judicial_requests": {
+      "clause_function": "legal_process_handling",
+      "clause_text": "Business Associate must notify Covered Entity of subpoenas and resist disclosure unless legally authorized.",
+      "clause_type": "legal_procedure",
+      "mandatory": true,
+      "entities": {
+        "legal_requests": ["subpoena", "court order"]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.512"
+      }
+    },
+
+    "qualified_service_org": {
+      "clause_function": "substance_abuse_compliance",
+      "clause_text": "If Business Associate is a Qualified Service Organization, it shall comply with 42 C.F.R. Part 2 confidentiality rules.",
+      "clause_type": "conditional",
+      "mandatory": false,
+      "entities": {
+        "organization_type": "QSO",
+        "regulated_data": "Substance abuse treatment records"
+      },
+      "legal_basis": {
+        "federal_regulation": "42 C.F.R. Part 2"
+      }
+    },
+
+    "term_and_termination": {
+      "clause_function": "duration_and_termination",
+      "clause_text": "This Agreement remains effective until PHI is returned or destroyed and may be terminated for cause or without cause.",
+      "clause_type": "termination",
+      "mandatory": true,
+      "entities": {
+        "termination_notice_days": 30,
+        "cure_period_days": 10
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)"
+      }
+    },
+
+    "post_termination_obligations": {
+      "clause_function": "data_retention_and_protection",
+      "clause_text": "Upon termination, PHI must be returned or destroyed or protections extended if infeasible.",
+      "clause_type": "survival",
+      "mandatory": true,
+      "entities": {
+        "post_termination_duties": ["return", "destruction", "continued protection"]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)(2)"
+      }
+    },
+
+    "indemnification": {
+      "clause_function": "risk_allocation",
+      "clause_text": "Business Associate shall indemnify Covered Entity for damages arising from breach of this Agreement.",
+      "clause_type": "liability",
+      "mandatory": true,
+      "entities": {
+        "indemnifying_party": "Business Associate",
+        "protected_party": "Covered Entity"
+      },
+      "legal_basis": {
+        "contract_law": "Indemnification doctrine"
+      }
+    },
+
+    "preemption": {
+      "clause_function": "regulatory_priority",
+      "clause_text": "HIPAA and stricter confidentiality laws shall control in case of inconsistency.",
+      "clause_type": "regulatory",
+      "mandatory": true,
+      "entities": {
+        "priority_rules": ["HIPAA", "42 C.F.R. Part 2"]
+      },
+      "legal_basis": {
+        "supremacy_rule": "More restrictive law governs"
+      }
+    },
+
+    "entire_agreement": {
+      "clause_function": "integration",
+      "clause_text": "This Agreement represents the entire understanding between the Parties.",
+      "clause_type": "standard",
+      "mandatory": true,
+      "entities": {},
+      "legal_basis": {
+        "contract_doctrine": "Entire agreement rule"
+      }
+    },
+
+    "signatures": {
+      "clause_function": "execution",
+      "clause_text": "The Parties execute this Agreement as of the dates below.",
+      "clause_type": "execution",
+      "mandatory": true,
+      "entities": {
+        "covered_entity_signature": "",
+        "business_associate_signature": "",
+        "execution_date": ""
+      },
+      "legal_basis": {
+        "contract_element": "Consent and authority"
+      }
+    }
+
+  }
+}

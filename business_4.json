@@ -1,0 +1,327 @@
+{
+  "id": "business_4.txt",
+  "contract_type": "business_associate_agreement",
+  "contract_title": "Agreement with Business Associate (Attachment 2)",
+  "clauses": {
+
+    "introduction": {
+      "clause_function": "contract_identification",
+      "clause_text": "This Agreement is effective upon full execution by and between the Business Associate and the Group Health Plan.",
+      "clause_type": "input",
+      "mandatory": true,
+      "entities": {
+        "business_associate_name": "",
+        "group_health_plan_name": "",
+        "effective_condition": "full execution"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. Parts 160–164"
+      }
+    },
+
+    "mutual_hipaa_compliance": {
+      "clause_function": "mutual_compliance_commitment",
+      "clause_text": "The Parties mutually agree to comply with HIPAA and applicable state privacy laws.",
+      "clause_type": "compliance",
+      "mandatory": true,
+      "entities": {
+        "regulations": [
+          "HIPAA",
+          "45 C.F.R. Parts 160–164",
+          "state privacy laws"
+        ]
+      },
+      "legal_basis": {
+        "federal_statute": "Health Insurance Portability and Accountability Act of 1996"
+      }
+    },
+
+    "phi_privacy_scope": {
+      "clause_function": "data_protection_scope",
+      "clause_text": "This Agreement governs the privacy of Protected Health Information and nonpublic personal financial information.",
+      "clause_type": "data_governance",
+      "mandatory": true,
+      "entities": {
+        "data_types": [
+          "Protected Health Information (PHI)",
+          "Nonpublic Personal Financial Information"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502"
+      }
+    },
+
+    "permitted_uses_and_disclosures": {
+      "clause_function": "authorization",
+      "clause_text": "Business Associate may use or disclose PHI only as permitted or required by this Agreement.",
+      "clause_type": "authorization",
+      "mandatory": true,
+      "entities": {
+        "authorized_party": "Business Associate",
+        "covered_data": "PHI"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)"
+      }
+    },
+
+    "functions_on_behalf_of_plan": {
+      "clause_function": "service_execution",
+      "clause_text": "Business Associate may use or disclose the minimum necessary PHI solely to perform obligations on behalf of Group Health Plan.",
+      "clause_type": "authorization",
+      "mandatory": true,
+      "entities": {
+        "minimum_standard": "Minimum Necessary",
+        "service_relationship": "Group Health Plan"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502(b)"
+      }
+    },
+
+    "business_associate_operations": {
+      "clause_function": "internal_operations_use",
+      "clause_text": "Business Associate may use PHI for management, administration, or legal responsibilities subject to required assurances.",
+      "clause_type": "conditional",
+      "mandatory": true,
+      "entities": {
+        "internal_purposes": [
+          "management",
+          "administration",
+          "legal responsibilities"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)(4)"
+      }
+    },
+
+    "third_party_assurances": {
+      "clause_function": "confidentiality_assurance",
+      "clause_text": "Third parties receiving PHI must provide written assurances of confidentiality and breach notification.",
+      "clause_type": "risk_management",
+      "mandatory": true,
+      "entities": {
+        "assurance_requirements": [
+          "confidentiality",
+          "limited use",
+          "breach notification"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502(e)"
+      }
+    },
+
+    "prohibition_unauthorized_use": {
+      "clause_function": "restriction",
+      "clause_text": "Business Associate may not use or disclose PHI except as permitted by this Agreement or required by law.",
+      "clause_type": "restriction",
+      "mandatory": true,
+      "entities": {
+        "prohibited_action": "unauthorized disclosure"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502"
+      }
+    },
+
+    "information_safeguards": {
+      "clause_function": "security_obligation",
+      "clause_text": "Business Associate shall implement administrative, technical, and physical safeguards to protect PHI.",
+      "clause_type": "security",
+      "mandatory": true,
+      "entities": {
+        "safeguard_types": [
+          "administrative",
+          "technical",
+          "physical"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.530(c)",
+        "security_rule": "42 U.S.C. §1320d-2(d)"
+      }
+    },
+
+    "subcontractors_and_agents": {
+      "clause_function": "flow_down_obligations",
+      "clause_text": "Business Associate must require subcontractors and agents to comply with equivalent privacy and security obligations.",
+      "clause_type": "risk_management",
+      "mandatory": true,
+      "entities": {
+        "third_parties": [
+          "subcontractors",
+          "agents"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.502(e)(1)"
+      }
+    },
+
+    "standard_transactions_compliance": {
+      "clause_function": "transaction_standardization",
+      "clause_text": "Business Associate must comply with HIPAA Standard Transaction requirements and permit testing.",
+      "clause_type": "compliance",
+      "mandatory": true,
+      "entities": {
+        "transaction_rules": "45 C.F.R. Part 162"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. Parts 160 and 162"
+      }
+    },
+
+    "electronic_phi_security": {
+      "clause_function": "electronic_data_protection",
+      "clause_text": "Business Associate must safeguard Electronic Protected Health Information (EPHI).",
+      "clause_type": "security",
+      "mandatory": true,
+      "entities": {
+        "data_type": "EPHI"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.308–312"
+      }
+    },
+
+    "individual_rights_access": {
+      "clause_function": "data_subject_rights",
+      "clause_text": "Business Associate must support access, amendment, and disclosure accounting rights.",
+      "clause_type": "compliance",
+      "mandatory": true,
+      "entities": {
+        "rights_supported": [
+          "access",
+          "amendment",
+          "accounting of disclosures"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §§164.524–528"
+      }
+    },
+
+    "disclosure_tracking": {
+      "clause_function": "audit_and_logging",
+      "clause_text": "Business Associate must track and report non-exempt disclosures for six (6) years.",
+      "clause_type": "audit",
+      "mandatory": true,
+      "entities": {
+        "retention_period_years": 6,
+        "reporting_deadline_days": 14
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.528"
+      }
+    },
+
+    "breach_reporting": {
+      "clause_function": "incident_response",
+      "clause_text": "Business Associate must promptly report unauthorized uses, disclosures, and security incidents.",
+      "clause_type": "compliance",
+      "mandatory": true,
+      "entities": {
+        "incident_types": [
+          "unauthorized disclosure",
+          "security incident",
+          "EPHI breach"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.410"
+      }
+    },
+
+    "termination_for_breach": {
+      "clause_function": "termination_right",
+      "clause_text": "Group Health Plan may terminate the Agreement for material breach after a ten (10) day cure period.",
+      "clause_type": "termination",
+      "mandatory": true,
+      "entities": {
+        "cure_period_days": 10,
+        "terminating_party": "Group Health Plan"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)"
+      }
+    },
+
+    "post_termination_phi_handling": {
+      "clause_function": "post_termination_obligations",
+      "clause_text": "Upon termination, PHI must be returned or destroyed within sixty (60) days or protected if infeasible.",
+      "clause_type": "survival",
+      "mandatory": true,
+      "entities": {
+        "completion_deadline_days": 60,
+        "allowed_exceptions": "infeasibility"
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §164.504(e)(2)"
+      }
+    },
+
+    "definitions": {
+      "clause_function": "term_definition",
+      "clause_text": "Defines IIHI, PHI, EPHI, Use, and Disclosure for purposes of this Agreement.",
+      "clause_type": "definitions",
+      "mandatory": true,
+      "entities": {
+        "defined_terms": [
+          "IIHI",
+          "PHI",
+          "EPHI",
+          "Use",
+          "Disclosure"
+        ]
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. §160.103"
+      }
+    },
+
+    "amendment_to_agreement": {
+      "clause_function": "regulatory_adaptation",
+      "clause_text": "The Agreement may be amended to maintain compliance with evolving privacy and security laws.",
+      "clause_type": "amendment",
+      "mandatory": true,
+      "entities": {
+        "notice_period_days": 45
+      },
+      "legal_basis": {
+        "hipaa": "45 C.F.R. Parts 160–164"
+      }
+    },
+
+    "conflicts_clause": {
+      "clause_function": "priority_of_terms",
+      "clause_text": "This Addendum controls over conflicting terms of the main Agreement.",
+      "clause_type": "integration",
+      "mandatory": true,
+      "entities": {
+        "controlling_document": "Addendum"
+      },
+      "legal_basis": {
+        "contract_doctrine": "Priority of terms"
+      }
+    },
+
+    "signatures": {
+      "clause_function": "execution",
+      "clause_text": "The Parties execute this Addendum to be effective upon full execution.",
+      "clause_type": "execution",
+      "mandatory": true,
+      "entities": {
+        "business_associate_signature": "",
+        "group_health_plan_signature": "",
+        "execution_date": ""
+      },
+      "legal_basis": {
+        "contract_element": "Mutual assent"
+      }
+    }
+
+  }
+}

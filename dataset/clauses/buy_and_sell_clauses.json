@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "id": "buy_and_sell_buy_and_sell.txt_0",
+        "contract_type": "buy_and_sell",
+        "clause_text": "BUY AND SELL AGREEMENT This Agreement is executed by Seller Jose Cruz and Buyer Miguel Santos. The Buyer agrees to purchase, and the Seller agrees to sell, one (1) unit of motorcycle for the amount of Seventy Thousand Pesos (PHP 70,000). Payment shall be made in full upon signing of this Agreement. This Agreement shall be governed by the Civil Code of the Philippines.",
+        "clause_text_normalized": "buy and sell agreement this agreement is executed by seller jose cruz and buyer miguel santos. the buyer agrees to purchase, and the seller agrees to sell, one (1) unit of motorcycle for the amount of seventy thousand pesos (php 70,000). payment shall be made in full upon signing of this agreement. this agreement shall be governed by the civil code of the philippines.",
+        "entities": {
+            "amount": false,
+            "date": false,
+            "party_name": true
+        }
+    }
+]

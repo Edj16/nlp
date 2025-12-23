@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "id": "employment_employment.txt_0",
+        "contract_type": "employment",
+        "clause_text": "EMPLOYMENT AGREEMENT This Employment Agreement is made between ABC Corporation (the \"Employer\") and Pedro Ramirez (the \"Employee\"). The Employee agrees to perform duties as a Software Developer. The Employee shall receive a monthly salary of Fifty Thousand Pesos (PHP 50,000). The term of this employment shall commence on April 15, 2025. Either party may terminate this Agreement upon thirty (30) days written notice. This Agreement shall be governed by the Labor Code of the Philippines.",
+        "clause_text_normalized": "employment agreement this employment agreement is made between abc corporation (the \"employer\") and pedro ramirez (the \"employee\"). the employee agrees to perform duties as a software developer. the employee shall receive a monthly salary of fifty thousand pesos (php 50,000). the term of this employment shall commence on april 15, 2025. either party may terminate this agreement upon thirty (30) days written notice. this agreement shall be governed by the labor code of the philippines.",
+        "entities": {
+            "amount": false,
+            "date": false,
+            "party_name": true
+        }
+    }
+]

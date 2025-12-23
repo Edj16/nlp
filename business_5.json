@@ -1,0 +1,244 @@
+[
+  {
+    "id": "business_5.txt",
+    "contract_type": "business",
+    "contract_title": "Microsoft Business Contract – Warranty Extension (Mechanical Breakdown)",
+    "clauses": {
+
+      "introduction": {
+        "clause_function": "contract_identification",
+        "clause_text": "This Contract sets forth the terms and conditions governing the Microsoft Mechanical Breakdown Warranty Extension purchased by the Customer.",
+        "clause_type": "information",
+        "mandatory": true,
+        "entities": {
+          "provider_name": "Microsoft Regional Sales Corp",
+          "customer_role": "Purchaser / Owner",
+          "contract_type": "Warranty Extension",
+          "coverage_type": "Mechanical Breakdown"
+        },
+        "legal_basis": {}
+      },
+
+      "contact_information": {
+        "clause_function": "contact_details",
+        "clause_text": "Provides official contact information for Microsoft for purposes of contract administration, claims, and notices.",
+        "mandatory": true,
+        "entities": {
+          "company_name": "Microsoft Regional Sales Corp",
+          "address": "438B Alexandra Road, #04-09/12, Block B, Alexandra Technopark, Singapore 119968",
+          "telephone": "65-63709000",
+          "email": "msespbus@microsoft.com"
+        },
+        "legal_basis": {}
+      },
+
+      "consumer_rights_summary": {
+        "clause_function": "statutory_disclosure",
+        "clause_text": "Summarizes consumer rights under the Consumer Guarantees Act 1993, including durability, fitness for purpose, remedies for failure, and dispute resolution.",
+        "mandatory": true,
+        "entities": {
+          "law_name": "Consumer Guarantees Act 1993",
+          "consumer_rights": [
+            "durability",
+            "fitness_for_purpose",
+            "repair",
+            "replacement",
+            "refund"
+          ]
+        },
+        "legal_basis": {
+          "statute": "Consumer Guarantees Act 1993"
+        }
+      },
+
+      "comparison_of_rights": {
+        "clause_function": "rights_comparison",
+        "clause_text": "Explains the difference between remedies available under the CGA and remedies provided under this Contract.",
+        "mandatory": true,
+        "entities": {
+          "statutory_rights": "CGA",
+          "contractual_rights": "Warranty Extension Contract",
+          "coverage_trigger": "Breakdown"
+        },
+        "legal_basis": {}
+      },
+
+      "right_to_cancel": {
+        "clause_function": "cooling_off_period",
+        "clause_text": "Customer may cancel this Contract within five (5) working days under the Fair Trading Act 1986.",
+        "mandatory": true,
+        "entities": {
+          "cancellation_period": "5 working days",
+          "governing_law": "Fair Trading Act 1986"
+        },
+        "legal_basis": {
+          "statute": "Fair Trading Act 1986"
+        }
+      },
+
+      "definitions": {
+        "clause_function": "definitions",
+        "clause_text": "Defines key terms used throughout this Contract, including Breakdown, Product, Repair, Replacement, and Limit of Liability.",
+        "mandatory": true,
+        "entities": {
+          "defined_terms": [
+            "Breakdown",
+            "Product",
+            "Repair",
+            "Replacement",
+            "Limit of Liability",
+            "Consequential Loss"
+          ]
+        },
+        "legal_basis": {}
+      },
+
+      "term_and_effective_date": {
+        "clause_function": "contract_duration",
+        "clause_text": "Coverage begins upon expiration of the Manufacturer’s limited warranty and continues for the stated Term or until the Limit of Liability is reached.",
+        "mandatory": true,
+        "entities": {
+          "coverage_start": "After manufacturer warranty expiration",
+          "coverage_end": "End of term or liability limit"
+        },
+        "legal_basis": {}
+      },
+
+      "product_eligibility": {
+        "clause_function": "eligibility_requirements",
+        "clause_text": "Specifies the eligibility criteria that Products must meet to be covered under this Contract.",
+        "mandatory": true,
+        "entities": {
+          "eligible_purchase": "Authorized Retailer",
+          "excluded_models": "Surface Hub",
+          "minimum_warranty": "12 months"
+        },
+        "legal_basis": {}
+      },
+
+      "coverage_scope": {
+        "clause_function": "coverage_grant",
+        "clause_text": "Provides for repair or replacement of the Product in the event of a covered Breakdown during the Term.",
+        "mandatory": true,
+        "entities": {
+          "covered_events": "Mechanical or electrical Breakdown",
+          "remedies": [
+            "Repair",
+            "Replacement"
+          ]
+        },
+        "legal_basis": {}
+      },
+
+      "optional_ssd_retention": {
+        "clause_function": "optional_coverage",
+        "clause_text": "Allows Customer to retain the SSD if optional SSD Retention Coverage was purchased.",
+        "mandatory": false,
+        "entities": {
+          "optional_feature": "SSD Retention",
+          "device_requirement": "Removable SSD"
+        },
+        "legal_basis": {}
+      },
+
+      "limit_of_liability": {
+        "clause_function": "liability_cap",
+        "clause_text": "Limits Microsoft’s total liability to the Original Purchase Price or up to two (2) replacements.",
+        "mandatory": true,
+        "entities": {
+          "maximum_replacements": 2,
+          "aggregate_limit": "Original Purchase Price"
+        },
+        "legal_basis": {}
+      },
+
+      "exclusions": {
+        "clause_function": "exclusions",
+        "clause_text": "Lists circumstances and damages that are not covered under this Contract.",
+        "mandatory": true,
+        "entities": {
+          "excluded_events": [
+            "accidental damage",
+            "loss or theft",
+            "cosmetic damage",
+            "unauthorized repairs",
+            "software issues",
+            "consumables"
+          ]
+        },
+        "legal_basis": {}
+      },
+
+      "claims_procedure": {
+        "clause_function": "claims_process",
+        "clause_text": "Outlines the steps required to submit and process a warranty claim.",
+        "mandatory": true,
+        "entities": {
+          "claim_deadline": "14 days from incident",
+          "required_documents": [
+            "Proof of Purchase",
+            "Service Request Number"
+          ]
+        },
+        "legal_basis": {}
+      },
+
+      "customer_responsibilities": {
+        "clause_function": "customer_obligations",
+        "clause_text": "Customer must back up data, provide accurate information, and follow service instructions.",
+        "mandatory": true,
+        "entities": {
+          "data_backup": true,
+          "accurate_disclosure": true
+        },
+        "legal_basis": {}
+      },
+
+      "fraud": {
+        "clause_function": "fraud_prevention",
+        "clause_text": "Any fraudulent claim results in termination of coverage and possible legal action.",
+        "mandatory": true,
+        "entities": {
+          "penalty": "Immediate termination",
+          "enforcement": "Law enforcement notification"
+        },
+        "legal_basis": {}
+      },
+
+      "cancellation": {
+        "clause_function": "termination_rights",
+        "clause_text": "Defines cancellation rights of both Customer and Microsoft, including refund conditions.",
+        "mandatory": true,
+        "entities": {
+          "customer_cancellation": "Any time",
+          "refund_type": [
+            "Full refund",
+            "Pro-rata refund"
+          ]
+        },
+        "legal_basis": {}
+      },
+
+      "governing_law": {
+        "clause_function": "governing_law",
+        "clause_text": "This Contract is governed by the laws of New Zealand.",
+        "mandatory": true,
+        "entities": {
+          "jurisdiction": "New Zealand"
+        },
+        "legal_basis": {
+          "governing_law": "New Zealand Law"
+        }
+      },
+
+      "entire_agreement": {
+        "clause_function": "integration_clause",
+        "clause_text": "This Contract constitutes the entire agreement between the parties.",
+        "mandatory": true,
+        "entities": {},
+        "legal_basis": {}
+      }
+
+    }
+  }
+]

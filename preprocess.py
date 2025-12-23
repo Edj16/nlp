@@ -23,7 +23,6 @@ def clean_text(text):
     text = text.replace("\t", " ")
     return text
 
-
 def normalize_for_nlp(text):
     text = text.lower()
     return text

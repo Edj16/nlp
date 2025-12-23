@@ -1,0 +1,13 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement is made between ABC Corporation (the "Employer") and Pedro Ramirez (the "Employee").
+
+The Employee agrees to perform duties as a Software Developer.
+
+The Employee shall receive a monthly salary of Fifty Thousand Pesos (PHP 50,000).
+
+The term of this employment shall commence on April 15, 2025.
+
+Either party may terminate this Agreement upon thirty (30) days written notice.
+
+This Agreement shall be governed by the Labor Code of the Philippines.

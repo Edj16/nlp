@@ -1,0 +1,45 @@
+[
+  {
+    "contract_type": "lease",
+    "clause_function": "parties",
+    "clause_text": "This Lease Agreement is made and executed by and between Juan Dela Cruz and Maria Santos.",
+    "mandatory": true,
+    "entities": {
+      "lessor": "Juan Dela Cruz",
+      "lessee": "Maria Santos"
+    }
+  },
+  {
+    "contract_type": "lease",
+    "clause_function": "term",
+    "clause_text": "The term of this lease shall be twelve (12) months commencing on March 1, 2025 and ending on March 1, 2026.",
+    "mandatory": true,
+    "entities": {
+      "start_date": "March 1, 2025",
+      "end_date": "March 1, 2026"
+    }
+  },
+  {
+    "contract_type": "lease",
+    "clause_function": "consideration",
+    "clause_text": "The Lessee agrees to pay a monthly rental fee of PHP 10,000.",
+    "mandatory": true,
+    "entities": {
+      "amount": "PHP 10,000"
+    }
+  },
+  {
+    "contract_type": "lease",
+    "clause_function": "obligations",
+    "clause_text": "Both parties agree to maintain the premises in good condition.",
+    "mandatory": false,
+    "entities": {}
+  },
+  {
+    "contract_type": "lease",
+    "clause_function": "termination",
+    "clause_text": "Either party may terminate this agreement upon thirty (30) days written notice.",
+    "mandatory": true,
+    "entities": {}
+  }
+]

@@ -1,0 +1,264 @@
+
+[
+  {
+    "id": "lease_1.txt",
+    "contract_type": "lease",
+    "contract_title": "Contract of Lease",
+
+    "clauses": {
+      
+      "introduction":{
+        "clause_function": "introduction",
+        "clause_text": "This CONTRACT OF LEASE, made and entered into this ___day of August, 2003 at the City of Makati, by and between: __________, of legal age, married and residing at ______, civil_code: Article 1643, Article 1687",
+        "mandatory": true,
+        "entities": {
+          "lessor": "",
+          "lessee": "",
+          "date": ""
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1643", "Article 1687"]
+        }
+      },
+
+      "parties":{
+        "clause_function": "parties",
+        "clause_text": "and hereinafter referred to as the LESSOR, and __________, also of legal age, married and residing at _____, and hereinafter referred to as the LESSEE.",
+        "mandatory": true,
+        "entities": {
+          "age": "",
+          "address": ""
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1649"]
+        }
+      },
+
+      "lease_term":{
+        "clause_function": "lease_term",
+        "clause_text": "The LESSOR hereby leases to the LESSEE the house and lot located at ______, for a period of ______, commencing on ______ and ending on ______.",
+        "mandatory": true,
+        "entities": {
+          "property": "",
+          "lease_period": "",
+          "start_date": "",
+          "end_date": ""
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1643", "Article 1687"]
+        }
+      },
+
+      "term_of_lease": {
+        "clause_function": "lease_term",
+        "clause_text": "That the lease shall be for a period of one year from December 17, 2002 up to December 17,2003;",
+        "mandatory": true,
+        "entities": {
+          "property": "",
+          "lease_period": "period of one year",
+          "start_date": "December 17, 2002",
+          "end_date": "December 17, 2003"
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1654", "Article 1657"]
+        }
+      },
+
+      "rent_payment":{
+        "clause_function": "rent_payment",
+        "clause_text": "That the LESSEE shall pay a monthly rental of FIFTY THOUSAND PESOS (P50,000.00), Philippine Currency, payable every 16th day of the month",
+        "mandatory": true,
+        "entities": {
+          "rent_amount": "PHP 50,000.00",
+          "payment_due_date": "16th day of each month"
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1649"]
+        }
+      },
+
+      "security_deposit":{
+        "clause_function": "security_deposit",
+        "clause_text": "That the LESSEE upon ________________________________________________ PESOS (_______________) representing two (2) months deposit and one (1) month advance. That the deposit shall not be considered as payment for rental but will be reimbursed by the LESSOR upon the termination of this contract, unless the leased property suffers damages or the LESSEE has unpaid utility and water bills in which case, said bills and damages will be paid out of the deposit",
+        "mandatory": true,
+        "entities": {
+          "deposit_amount": "PHP 50,000.00"
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1651", "Article 1169"]
+        }
+      },
+
+      "utilities responsibility": {
+        "clause_function": "utilities_responsibility",
+        "clause_text": "Electric and water bills shall be for the account of the LESSEE, based on the monthly meter readings.",
+        "mandatory": true,
+        "entities": {
+          "utilities": ["electricity", "water"]
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1654", "Article 1657"]
+        }
+      },
+
+      "use of premises":{
+        "clause_function": "use_of_premises",
+        "clause_text": "The leased premises shall be devoted exclusively for residential purposes only.",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1657"]
+        }
+      },
+
+      "improvement_and_alterations":{
+        "clause_function": "improvements_and_alterations",
+        "clause_text": "All improvements require prior consent of the LESSOR, and any improvement that cannot be removed shall become the property of the LESSOR.",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1678", "Article 1661"]
+        }
+      },
+
+      "repairs_and_damage":{
+        "clause_text": "Expenses for repairs arising from willful and knowing damage caused by the LESSEE shall be shouldered by the LESSEE",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1654", "Article 1657"]
+        }
+      },
+
+      "subleasing prohibition":{
+        "clause_function": "subleasing_prohibition",
+        "clause_text": "The leased premises shall not be subleased to any person or entity without the written consent of the LESSOR.",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1650"]
+        }
+      },
+
+      "fail to surrender premises":{
+        "clause_function": "fail_to_surrender_premises",
+        "clause_text": "If the premises are not surrendered upon expiration of the lease, the LESSEE shall be liable for all damages suffered by the LESSOR.",
+        "mandatory": true,
+        "entities": {
+          "penalty_amount": ""
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1673", "Article 1167"]
+        }
+      },
+
+      "condition upon return":{
+        "clause_function": "condition_upon_return",
+        "clause_text": "The LESSEE agrees to return the premises in good condition, subject only to reasonable wear and tear, without delay",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1665"]
+        }
+      },
+
+      "lessors_right_to_offset_arrears":{
+        "clause_function": "lessors_right_to_offset_arrears",
+        "clause_text": "In case of unpaid rental arrears, the LESSOR may take possession of the LESSEE’s tangible and valuable property to offset the arrears without judicial action.",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1662", "Article 2241"]
+        }
+      },
+
+      "abandonment_of_premise":{
+        "clause_function": "abandonment_of_premise",
+        "clause_text": "If the premises are abandoned for one (1) week without notice and while the LESSEE is in default, the LESSOR may consider the premises legally abandoned and take possession thereof.",
+        "mandatory": true,
+        "entities": {
+          "duration": "one (1) week"
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1673", "Article 1658"]
+        }
+      },
+
+      "rental_escalation":{
+        "clause_function": "rental_escalation",
+        "clause_text": "The LESSOR reserves the right to increase the rental rate by ten percent (10%) after one (1) year if the contract is renewed by mutual agreement. ",
+        "mandatory": true,
+        "entities": {
+          "escalation_rate": "10%",
+          "escalation_period": "after one (1) year"
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1306", "Article 1643"]
+        }
+      },
+
+      "cleanliness_and_conduct":{
+        "clause_function": "cleanliness_and_conduct",
+        "clause_text": "The LESSEE is obliged to observe cleanliness and maintain a peaceful condition inside and outside the premises.",
+        "mandatory": true,
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1657", "Article 1663"]
+        }
+      },
+
+      "compliance_and_sanctions":{
+        "clause_function": "compliance_and_sanctions",
+        "clause_text": "The LESSEE warrants having read and understood the contract and agrees to comply; violations may result in ejectment and other legal sanctions.",
+        "entities": {
+        },
+
+        "legal_basis" : {
+          "law": "Civil Code of the Philippines",
+          "articles": ["Article 1159 ", "Article 1673"]
+        }
+      }
+    }
+  }
+]

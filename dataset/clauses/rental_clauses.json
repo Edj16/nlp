@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "id": "rental_lease.txt_0",
+        "contract_type": "rental",
+        "clause_text": "LEASE AGREEMENT This Lease Agreement is made and executed by and between Juan Dela Cruz, Filipino, of legal age, hereinafter referred to as the LESSOR, and Maria Santos, Filipino, of legal age, hereinafter referred to as the LESSEE. The term of this lease shall be twelve (12) months commencing on March 1, 2025 and ending on March 1, 2026. The Lessee agrees to pay a monthly rental fee of Ten Thousand Pesos (PHP 10,000) payable every first day of the month. Both parties agree to maintain the premises in good condition. Either party may terminate this agreement upon thirty (30) days written notice. Signed this 14th day of February, 2025, in Manila, Philippines.",
+        "clause_text_normalized": "lease agreement this lease agreement is made and executed by and between juan dela cruz, filipino, of legal age, hereinafter referred to as the lessor, and maria santos, filipino, of legal age, hereinafter referred to as the lessee. the term of this lease shall be twelve (12) months commencing on march 1, 2025 and ending on march 1, 2026. the lessee agrees to pay a monthly rental fee of ten thousand pesos (php 10,000) payable every first day of the month. both parties agree to maintain the premises in good condition. either party may terminate this agreement upon thirty (30) days written notice. signed this 14th day of february, 2025, in manila, philippines.",
+        "entities": {
+            "amount": false,
+            "date": false,
+            "party_name": true
+        }
+    }
+]

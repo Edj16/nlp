@@ -1,0 +1,46 @@
+[
+  {
+    "contract_type": "employment",
+    "clause_function": "parties",
+    "clause_text": "This Employment Agreement is made between ABC Corporation and Pedro Ramirez.",
+    "mandatory": true,
+    "entities": {
+      "employer": "ABC Corporation",
+      "employee": "Pedro Ramirez"
+    }
+  },
+  {
+    "contract_type": "employment",
+    "clause_function": "duties",
+    "clause_text": "The Employee agrees to perform duties as a Software Developer.",
+    "mandatory": true,
+    "entities": {
+      "position": "Software Developer"
+    }
+  },
+  {
+    "contract_type": "employment",
+    "clause_function": "consideration",
+    "clause_text": "The Employee shall receive a monthly salary of PHP 50,000.",
+    "mandatory": true,
+    "entities": {
+      "amount": "PHP 50,000"
+    }
+  },
+  {
+    "contract_type": "employment",
+    "clause_function": "term",
+    "clause_text": "The term of this employment shall commence on April 15, 2025.",
+    "mandatory": true,
+    "entities": {
+      "start_date": "April 15, 2025"
+    }
+  },
+  {
+    "contract_type": "employment",
+    "clause_function": "termination",
+    "clause_text": "Either party may terminate this Agreement upon thirty (30) days written notice.",
+    "mandatory": true,
+    "entities": {}
+  }
+]

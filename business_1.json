@@ -1,0 +1,265 @@
+[
+  {
+    "id": "business_1.txt",
+    "contract_type": "business",
+    "contract_title": "Business Agreement",
+    "clauses": {
+
+      "introduction": {
+        "clause_function": "fill_in_data",
+        "clause_text": "",
+        "clause_type": "input",
+        "mandatory": true,
+        "entities": {
+          "business_name": "",
+          "owner_name": "",
+          "contact_name": "",
+          "category": "",
+          "email_address": "",
+          "phone_number": ""
+        },
+        "legal_basis": {}
+      },
+
+      "participation_agreement": {
+        "clause_function": "participation_agreement",
+        "clause_text": "By signing this Contract I, as the above-named business (“Business”), agree to be a participating Co-op Connections business and will give discounts to all Co-op Connections Cardholders as noted in the Co-op Connections brochure. I can provide whatever discount I want, as long as it is something that provides a real economic value to Cardholders. I have chosen the discount described below.",
+        "mandatory": true,
+        "entities": {
+          "participant_role": "Business",
+          "program_name": "Co-op Connections",
+          "beneficiary": "Cardholders",
+          "discount_requirement": "real economic value"
+        },
+        "legal_basis": {
+          "civil_code": "Article 1159"
+        }
+      },
+
+      "contract_term": {
+        "clause_function": "contract_term",
+        "clause_text": "I will continue to offer this discount (or a better discount) for a minimum of one year, unless my local cooperative terminates this Contract or Touchstone Energy terminates the program.",
+        "mandatory": true,
+        "entities": {
+          "minimum_term": "1 year",
+          "termination_conditions": [
+            "termination by Local Co-op",
+            "termination of program by Touchstone Energy"
+          ]
+        },
+        "legal_basis": {
+          "civil_code": "Article 1305"
+        }
+      },
+
+      "parties_and_relationship": {
+        "clause_function": "parties_and_relationship",
+        "clause_text": "This Contract is between You and Local Co-op. Nothing herein establishes a partnership, joint venture, agency, franchise, or employment relationship.",
+        "mandatory": true,
+        "entities": {
+          "parties": ["Business", "Local Co-op"],
+          "relationship_exclusions": [
+            "partnership",
+            "agency",
+            "employment",
+            "joint venture"
+          ]
+        },
+        "legal_basis": {
+          "civil_code": "Article 1767"
+        }
+      },
+
+      "liability_disclaimer": {
+        "clause_function": "liability_disclaimer",
+        "clause_text": "Neither Touchstone Energy nor any Co-op will be liable for your products or services or for any inaccuracy in your marketing materials.",
+        "mandatory": true,
+        "entities": {
+          "liable_party": "Business",
+          "excluded_liability": [
+            "products",
+            "services",
+            "marketing materials"
+          ]
+        },
+        "legal_basis": {
+          "civil_code": "Article 2176"
+        }
+      },
+
+      "card_ownership": {
+        "clause_function": "card_ownership",
+        "clause_text": "All Cards are the property of Touchstone Energy, and unauthorized reproduction is prohibited.",
+        "mandatory": true,
+        "entities": {
+          "owner": "Touchstone Energy",
+          "property_type": "Co-op Connections Card"
+        },
+        "legal_basis": {
+          "civil_code": "Article 428"
+        }
+      },
+
+      "use_of_intellectual_property": {
+        "clause_function": "use_of_intellectual_property",
+        "clause_text": "Marketing materials shall not use the name or trademark of Touchstone Energy or any Co-op without written approval.",
+        "mandatory": true,
+        "entities": {
+          "restricted_ip": [
+            "name",
+            "trademark",
+            "branding"
+          ],
+          "consent_required": true
+        },
+        "legal_basis": {
+          "civil_code": "Article 429"
+        }
+      },
+
+      "signage_requirement": {
+        "clause_function": "signage_requirement",
+        "clause_text": "You will post Co-op Connections signage as required by Touchstone Energy.",
+        "mandatory": true,
+        "entities": {
+          "signage_required": true,
+          "authority": "Touchstone Energy"
+        },
+        "legal_basis": {}
+      },
+
+      "termination_by_local_coop": {
+        "clause_function": "termination_by_local_coop",
+        "clause_text": "Local Co-op may terminate the Contract on 30 days notice or immediately under specific conditions.",
+        "mandatory": true,
+        "entities": {
+          "notice_period_days": 30,
+          "immediate_termination_events": [
+            "material breach",
+            "change of ownership",
+            "bankruptcy",
+            "program withdrawal"
+          ]
+        },
+        "legal_basis": {
+          "civil_code": "Article 1191"
+        }
+      },
+
+      "termination_by_business": {
+        "clause_function": "termination_by_business",
+        "clause_text": "You may terminate the Contract after one year with 30 days prior written notice.",
+        "mandatory": true,
+        "entities": {
+          "termination_right_holder": "Business",
+          "notice_period_days": 30,
+          "minimum_elapsed_time": "1 year"
+        },
+        "legal_basis": {
+          "civil_code": "Article 1191"
+        }
+      },
+
+      "termination_by_touchstone": {
+        "clause_function": "termination_by_touchstone",
+        "clause_text": "Termination of the Co-op Connections program automatically terminates this Contract.",
+        "mandatory": true,
+        "entities": {
+          "terminating_entity": "Touchstone Energy",
+          "effect": "automatic contract termination"
+        },
+        "legal_basis": {
+          "civil_code": "Article 1311"
+        }
+      },
+
+      "confidentiality": {
+        "clause_function": "confidentiality",
+        "clause_text": "Both parties shall keep confidential all non-public information received under this Contract.",
+        "mandatory": true,
+        "entities": {
+          "confidential_information": "non-public information",
+          "bound_parties": ["Business", "Local Co-op"]
+        },
+        "legal_basis": {
+          "civil_code": "Article 19"
+        }
+      },
+
+      "indemnification": {
+        "clause_function": "indemnification",
+        "clause_text": "You agree to indemnify and hold harmless Touchstone Energy and Co-ops except in cases of gross negligence or willful misconduct.",
+        "mandatory": true,
+        "entities": {
+          "indemnifying_party": "Business",
+          "protected_parties": [
+            "Touchstone Energy",
+            "Co-ops",
+            "affiliates"
+          ],
+          "exceptions": [
+            "gross negligence",
+            "willful misconduct"
+          ]
+        },
+        "legal_basis": {
+          "civil_code": "Article 1170"
+        }
+      },
+
+      "governing_law": {
+        "clause_function": "governing_law",
+        "clause_text": "This Contract is governed by the laws of Virginia.",
+        "mandatory": true,
+        "entities": {
+          "governing_jurisdiction": "Virginia"
+        },
+        "legal_basis": {
+          "civil_code": "Article 1306"
+        }
+      },
+
+      "jury_trial_waiver": {
+        "clause_function": "jury_trial_waiver",
+        "clause_text": "Each party waives its right to jury trial.",
+        "mandatory": true,
+        "entities": {
+          "waived_right": "jury trial"
+        },
+        "legal_basis": {
+          "civil_code": "Article 6"
+        }
+      },
+
+      "modification_of_terms": {
+        "clause_function": "modification_of_terms",
+        "clause_text": "Touchstone Energy may modify the Contract by posting changes online with effect after 30 days.",
+        "mandatory": true,
+        "entities": {
+          "modifying_party": "Touchstone Energy",
+          "effectivity_period_days": 30,
+          "publication_medium": "website"
+        },
+        "legal_basis": {}
+      },
+
+      "trademark_and_ip_rights": {
+        "clause_function": "trademark_and_ip_rights",
+        "clause_text": "Each party retains exclusive ownership of its intellectual property.",
+        "mandatory": true,
+        "entities": {
+          "ip_types": [
+            "trademarks",
+            "service marks",
+            "trade names",
+            "copyrights"
+          ],
+          "ownership": "exclusive"
+        },
+        "legal_basis": {
+          "civil_code": "Article 428"
+        }
+      }
+    }
+  }
+]

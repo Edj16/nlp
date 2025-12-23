@@ -1,0 +1,219 @@
+{
+  "id": "business_2.txt",
+  "contract_type": "business",
+  "contract_title": "Business Contract for Services",
+  "clauses": {
+
+    "introduction": {
+      "clause_function": "contract_identification",
+      "clause_text": "This Business Contract is entered into as of [DATE OF CONTRACT] (the “Contract”) between [BUSINESS NAME] (“Business”) and [CLIENT NAME] (“Client”), having an address of [CLIENT ADDRESS] (together, “Parties”).",
+      "clause_type": "input",
+      "mandatory": true,
+      "entities": {
+        "contract_date": "",
+        "business_name": "",
+        "client_name": "",
+        "client_address": "",
+        "party_definition": "Parties"
+      },
+      "legal_basis": {
+        "general_contract_principle": "Mutual consent"
+      }
+    },
+
+    "transaction_details": {
+      "clause_function": "scope_of_engagement",
+      "clause_text": "The Business agrees to provide and the Client agrees to retain the Services to be performed by Business in accordance with the terms and conditions of this Contract.",
+      "clause_type": "obligation",
+      "mandatory": true,
+      "entities": {
+        "service_provider": "Business",
+        "service_recipient": "Client",
+        "service_reference": "Services"
+      },
+      "legal_basis": {
+        "civil_code": "Obligations and Contracts"
+      }
+    },
+
+    "definition_of_services": {
+      "clause_function": "service_definition",
+      "clause_text": "The Business shall provide [DETAILED DESCRIPTION OF SERVICES TO BE PERFORMED].",
+      "clause_type": "input",
+      "mandatory": true,
+      "entities": {
+        "service_description": ""
+      },
+      "legal_basis": {
+        "contract_certainty": "Definiteness of object"
+      }
+    },
+
+    "service_standards": {
+      "clause_function": "performance_standard",
+      "clause_text": "The Services provided shall comply with the Business’ standards, quotation and expectations as detailed to Client.",
+      "clause_type": "performance",
+      "mandatory": true,
+      "entities": {
+        "performance_standard": "Business standards",
+        "reference_documents": ["quotation", "expectations"]
+      },
+      "legal_basis": {
+        "civil_code": "Good faith performance"
+      }
+    },
+
+    "payment_terms": {
+      "clause_function": "consideration",
+      "clause_text": "Client will pay Business $____ per hour or a $____ per occurrence flat rate for the Services performed.",
+      "clause_type": "financial",
+      "mandatory": true,
+      "entities": {
+        "payment_structure": ["hourly_rate", "flat_rate"],
+        "amount": ""
+      },
+      "legal_basis": {
+        "contract_element": "Consideration"
+      }
+    },
+
+    "discount_and_late_payment": {
+      "clause_function": "payment_conditions",
+      "clause_text": "Business shall provide [no discounts OR a discount if paid within ___ days]. Late payments incur a fee if unpaid within 7 days, and material breach occurs after 10 days.",
+      "clause_type": "financial",
+      "mandatory": true,
+      "entities": {
+        "discount_policy": "",
+        "discount_period_days": "",
+        "late_fee_amount": "",
+        "breach_period_days": 10
+      },
+      "legal_basis": {
+        "civil_code": "Delay and breach"
+      }
+    },
+
+    "cancellation": {
+      "clause_function": "termination_by_client",
+      "clause_text": "Client may cancel this Contract with written notice and payment of a $100.00 cancellation fee plus any incidental costs incurred.",
+      "clause_type": "termination",
+      "mandatory": true,
+      "entities": {
+        "cancellation_fee": 100,
+        "notice_type": "written",
+        "additional_costs": "incidental fees and taxes"
+      },
+      "legal_basis": {
+        "civil_code": "Rescission of contracts"
+      }
+    },
+
+    "limitation_of_remedies": {
+      "clause_function": "liability_limitation",
+      "clause_text": "If Business cannot fulfill its obligations due to circumstances beyond its control, Business may provide a replacement or refund the Client in full.",
+      "clause_type": "liability",
+      "mandatory": true,
+      "entities": {
+        "force_majeure": "circumstances beyond control",
+        "remedies": ["replacement", "full_refund"]
+      },
+      "legal_basis": {
+        "doctrine": "Force majeure"
+      }
+    },
+
+    "dispute_resolution": {
+      "clause_function": "amicable_settlement",
+      "clause_text": "The Parties agree not to post negative public information without prior written notice and an opportunity to resolve disputes amicably.",
+      "clause_type": "dispute_resolution",
+      "mandatory": true,
+      "entities": {
+        "restriction": "negative public postings",
+        "resolution_method": "amicable settlement",
+        "notice_requirement": "advance written notice"
+      },
+      "legal_basis": {
+        "principle": "Good faith and fair dealing"
+      }
+    },
+
+    "severability": {
+      "clause_function": "contract_preservation",
+      "clause_text": "If any provision is found invalid or unenforceable, the remainder of the Agreement remains in full force and effect.",
+      "clause_type": "standard",
+      "mandatory": true,
+      "entities": {},
+      "legal_basis": {
+        "contract_doctrine": "Severability"
+      }
+    },
+
+    "waiver": {
+      "clause_function": "rights_preservation",
+      "clause_text": "Failure to enforce any right shall not constitute a waiver of future enforcement.",
+      "clause_type": "standard",
+      "mandatory": true,
+      "entities": {},
+      "legal_basis": {
+        "contract_doctrine": "Non-waiver"
+      }
+    },
+
+    "legal_fees": {
+      "clause_function": "cost_allocation",
+      "clause_text": "The prevailing party in any legal action shall be entitled to recover legal and attorney’s fees.",
+      "clause_type": "litigation",
+      "mandatory": true,
+      "entities": {
+        "prevailing_party": "successful party",
+        "recoverable_costs": ["legal fees", "attorney fees"]
+      },
+      "legal_basis": {
+        "civil_code": "Damages and costs"
+      }
+    },
+
+    "governing_law_and_jurisdiction": {
+      "clause_function": "choice_of_law",
+      "clause_text": "This Agreement shall be governed by the law of the State or Country where the Parties do business, or [STATE] law if different.",
+      "clause_type": "jurisdiction",
+      "mandatory": true,
+      "entities": {
+        "governing_law": "",
+        "jurisdiction_scope": ["State", "Country"]
+      },
+      "legal_basis": {
+        "conflict_of_laws": "Party autonomy"
+      }
+    },
+
+    "entire_agreement": {
+      "clause_function": "integration",
+      "clause_text": "This Agreement constitutes the entire agreement between the Parties and may only be modified in writing signed by both Parties.",
+      "clause_type": "standard",
+      "mandatory": true,
+      "entities": {
+        "modification_requirement": "written and signed"
+      },
+      "legal_basis": {
+        "contract_doctrine": "Entire agreement rule"
+      }
+    },
+
+    "signatures": {
+      "clause_function": "execution",
+      "clause_text": "The Parties agree to the terms of this Agreement as evidenced by their signatures.",
+      "clause_type": "execution",
+      "mandatory": true,
+      "entities": {
+        "client_signature": "",
+        "business_signature": "",
+        "execution_date": ""
+      },
+      "legal_basis": {
+        "contract_element": "Consent and execution"
+      }
+    }
+
+  }
+}
