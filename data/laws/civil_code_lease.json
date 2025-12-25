@@ -1,0 +1,126 @@
+{
+  "law": "Philippine Civil Code",
+  "title": "Title VIII - Lease",
+  "coverage": "General Provisions, Rural and Urban Lease",
+  "articles": [
+    {
+      "article": "1642",
+      "topic": "Definition of Lease",
+      "rule": "A contract of lease may be of things, or of work and service.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1643",
+      "topic": "Lease of Things",
+      "rule": "In the lease of things, one party gives the enjoyment or use of a thing for a certain price and period. No lease exceeding 99 years is valid.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1644",
+      "topic": "Lease of Work or Service",
+      "rule": "Lease of work or service requires execution of work or rendering of service for a price, without principal-agent relationship.",
+      "applies_to": ["SERVICE_LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1645",
+      "topic": "Subject Matter of Lease",
+      "rule": "Consumable goods cannot be leased unless for exhibition or as accessories to an industrial establishment.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1649",
+      "topic": "Assignment of Lease",
+      "rule": "The lessee cannot assign the lease without the consent of the lessor unless stipulated otherwise.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1650",
+      "topic": "Sublease",
+      "rule": "The lessee may sublet the leased property in whole or in part if there is no express prohibition.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1654",
+      "topic": "Obligations of the Lessor",
+      "rule": "The lessor must deliver the property fit for its intended use, make necessary repairs, and ensure peaceful enjoyment during the lease.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1657",
+      "topic": "Obligations of the Lessee",
+      "rule": "The lessee must pay rent, use the property diligently, and pay expenses for the deed of lease.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1658",
+      "topic": "Suspension of Rent",
+      "rule": "The lessee may suspend rent payment if the lessor fails to make necessary repairs or ensure peaceful enjoyment.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1659",
+      "topic": "Rescission and Damages",
+      "rule": "If either party fails to comply with obligations, the aggrieved party may seek rescission and/or damages.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1660",
+      "topic": "Dangerous Condition of Property",
+      "rule": "If the leased dwelling poses imminent danger to life or health, the lessee may immediately terminate the lease.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1665",
+      "topic": "Return of Leased Property",
+      "rule": "The lessee must return the leased property upon termination, except for ordinary wear and tear or inevitable loss.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1669",
+      "topic": "Termination of Lease",
+      "rule": "A lease for a definite period ends on the day fixed without need of demand.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1670",
+      "topic": "Implied New Lease",
+      "rule": "Continued possession for 15 days with the lessor's consent results in an implied new lease.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1673",
+      "topic": "Judicial Ejectment",
+      "rule": "The lessor may eject the lessee for expiration, non-payment, contract violation, or improper use of property.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1679",
+      "topic": "Payment of Rent",
+      "rule": "If time and place of rent payment are not stipulated, legal provisions and local custom apply.",
+      "applies_to": ["LEASE"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1687",
+      "topic": "Lease Duration Without Fixed Term",
+      "rule": "If no period is fixed, lease duration depends on rent payment frequency, subject to court determination.",
+      "applies_to": ["URBAN_LEASE"],
+      "mandatory_clause": true
+    }
+  ]
+}

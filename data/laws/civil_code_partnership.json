@@ -1,0 +1,448 @@
+{
+  "law": "Philippine Civil Code",
+  "title": "Title IX - Partnership",
+  "coverage": "General Provisions, Obligations of Partners, Dissolution and Winding Up, Limited Partnership",
+  "articles": [
+    {
+      "article": "1767",
+      "topic": "Definition of Partnership",
+      "rule": "By the contract of partnership two or more persons bind themselves to contribute money, property, or industry to a common fund, with the intention of dividing the profits among themselves. Two or more persons may also form a partnership for the exercise of a profession.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1768",
+      "topic": "Juridical Personality",
+      "rule": "The partnership has a juridical personality separate and distinct from that of each of the partners, even in case of failure to comply with the requirements of article 1772, first paragraph.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1769",
+      "topic": "Determining Partnership Existence",
+      "rule": "Co-ownership or co-possession does not of itself establish a partnership. Sharing of gross returns does not establish a partnership. Receipt of share of profits is prima facie evidence of partnership, with exceptions for debt payments, wages, rent, annuities, interest, or sale considerations.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1770",
+      "topic": "Lawful Object and Purpose",
+      "rule": "A partnership must have a lawful object or purpose, and must be established for the common benefit or interest of the partners. When an unlawful partnership is dissolved by judicial decree, profits shall be confiscated in favor of the State.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1771",
+      "topic": "Form of Partnership Contract",
+      "rule": "A partnership may be constituted in any form, except where immovable property or real rights are contributed thereto, in which case a public instrument shall be necessary.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1772",
+      "topic": "Registration Requirement",
+      "rule": "Every contract of partnership having a capital of three thousand pesos or more, in money or property, shall appear in a public instrument, which must be recorded in the Office of the Securities and Exchange Commission. Failure to comply shall not affect the liability of the partnership and the members thereof to third persons.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1773",
+      "topic": "Inventory of Immovable Property",
+      "rule": "A contract of partnership is void, whenever immovable property is contributed thereto, if an inventory of said property is not made, signed by the parties, and attached to the public instrument.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1774",
+      "topic": "Acquisition in Partnership Name",
+      "rule": "Any immovable property or an interest therein may be acquired in the partnership name. Title so acquired can be conveyed only in the partnership name.",
+      "applies_to": ["PARTNERSHIP_PROPERTY"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1775",
+      "topic": "Secret Associations",
+      "rule": "Associations and societies, whose articles are kept secret among the members, and wherein any one of the members may contract in his own name with third persons, shall have no juridical personality, and shall be governed by the provisions relating to co-ownership.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1776",
+      "topic": "Classification of Partnerships",
+      "rule": "As to its object, a partnership is either universal or particular. As regards the liability of the partners, a partnership may be general or limited.",
+      "applies_to": ["PARTNERSHIP_TYPES"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1784",
+      "topic": "Commencement of Partnership",
+      "rule": "A partnership begins from the moment of the execution of the contract, unless it is otherwise stipulated.",
+      "applies_to": ["PARTNERSHIP_FORMATION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1786",
+      "topic": "Partner as Debtor",
+      "rule": "Every partner is a debtor of the partnership for whatever he may have promised to contribute thereto. He shall also be bound for warranty in case of eviction with regard to specific and determinate things which he may have contributed to the partnership.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1788",
+      "topic": "Failure to Contribute Money",
+      "rule": "A partner who has undertaken to contribute a sum of money and fails to do so becomes a debtor for the interest and damages from the time he should have complied with his obligation.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1789",
+      "topic": "Industrial Partner Restrictions",
+      "rule": "An industrial partner cannot engage in business for himself, unless the partnership expressly permits him to do so; and if he should do so, the capitalist partners may either exclude him from the firm or avail themselves of the benefits which he may have obtained in violation of this provision.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1790",
+      "topic": "Equal Contribution Default",
+      "rule": "Unless there is a stipulation to the contrary, the partners shall contribute equal shares to the capital of the partnership.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1791",
+      "topic": "Additional Contributions",
+      "rule": "If there is no agreement to the contrary, in case of an imminent loss of the business of the partnership, any partner who refuses to contribute an additional share to the capital, except an industrial partner, to save the venture, shall be obliged to sell his interest to the other partners.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": false
+    },
+    {
+      "article": "1794",
+      "topic": "Partner Liability for Damages",
+      "rule": "Every partner is responsible to the partnership for damages suffered by it through his fault, and he cannot compensate them with the profits and benefits which he may have earned for the partnership by his industry.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1796",
+      "topic": "Reimbursement of Expenses",
+      "rule": "The partnership shall be responsible to every partner for the amounts he may have disbursed on behalf of the partnership and for the corresponding interest, from the time the expenses are made.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1797",
+      "topic": "Distribution of Profits and Losses",
+      "rule": "The losses and profits shall be distributed in conformity with the agreement. In the absence of stipulation, the share of each partner in the profits and losses shall be in proportion to what he may have contributed, but the industrial partner shall not be liable for the losses.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1799",
+      "topic": "Prohibition on Exclusion from Profits or Losses",
+      "rule": "A stipulation which excludes one or more partners from any share in the profits or losses is void.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1800",
+      "topic": "Managing Partner Authority",
+      "rule": "The partner who has been appointed manager in the articles of partnership may execute all acts of administration despite the opposition of his partners, unless he should act in bad faith; and his power is irrevocable without just or lawful cause.",
+      "applies_to": ["PARTNERSHIP_MANAGEMENT"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1801",
+      "topic": "Multiple Managing Partners",
+      "rule": "If two or more partners have been intrusted with the management of the partnership without specification of their respective duties, each one may separately execute all acts of administration, but if any of them should oppose the acts of the others, the decision of the majority shall prevail.",
+      "applies_to": ["PARTNERSHIP_MANAGEMENT"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1804",
+      "topic": "Associate Partner",
+      "rule": "Every partner may associate another person with him in his share, but the associate shall not be admitted into the partnership without the consent of all the other partners.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1805",
+      "topic": "Partnership Books",
+      "rule": "The partnership books shall be kept, subject to any agreement between the partners, at the principal place of business of the partnership, and every partner shall at any reasonable hour have access to and may inspect and copy any of them.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1806",
+      "topic": "Information Rights",
+      "rule": "Partners shall render on demand true and full information of all things affecting the partnership to any partner or the legal representative of any deceased partner or of any partner under legal disability.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1807",
+      "topic": "Accounting for Benefits",
+      "rule": "Every partner must account to the partnership for any benefit, and hold as trustee for it any profits derived by him without the consent of the other partners from any transaction connected with the formation, conduct, or liquidation of the partnership or from any use by him of its property.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1808",
+      "topic": "Capitalist Partner Restrictions",
+      "rule": "The capitalist partners cannot engage for their own account in any operation which is of the kind of business in which the partnership is engaged, unless there is a stipulation to the contrary.",
+      "applies_to": ["PARTNER_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1810",
+      "topic": "Property Rights of a Partner",
+      "rule": "The property rights of a partner are: (1) His rights in specific partnership property; (2) His interest in the partnership; and (3) His right to participate in the management.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1811",
+      "topic": "Co-ownership of Partnership Property",
+      "rule": "A partner is co-owner with his partners of specific partnership property. A partner's right in specific partnership property is not assignable except in connection with the assignment of rights of all the partners in the same property.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1812",
+      "topic": "Partner's Interest",
+      "rule": "A partner's interest in the partnership is his share of the profits and surplus.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1813",
+      "topic": "Conveyance of Partnership Interest",
+      "rule": "A conveyance by a partner of his whole interest in the partnership does not of itself dissolve the partnership, or entitle the assignee to interfere in the management or administration of the partnership business or affairs.",
+      "applies_to": ["PARTNER_RIGHTS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1815",
+      "topic": "Firm Name Requirement",
+      "rule": "Every partnership shall operate under a firm name, which may or may not include the name of one or more of the partners. Those who, not being members of the partnership, include their names in the firm name, shall be subject to the liability of a partner.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1816",
+      "topic": "Partner Liability to Third Persons",
+      "rule": "All partners, including industrial ones, shall be liable pro rata with all their property and after all the partnership assets have been exhausted, for the contracts which may be entered into in the name and for the account of the partnership.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1817",
+      "topic": "Non-Waivable Liability",
+      "rule": "Any stipulation against the liability laid down in the preceding article shall be void, except as among the partners.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1818",
+      "topic": "Partner as Agent",
+      "rule": "Every partner is an agent of the partnership for the purpose of its business, and the act of every partner binds the partnership, unless the partner so acting has in fact no authority and the person with whom he is dealing has knowledge of the fact that he has no such authority.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1822",
+      "topic": "Partnership Liability for Wrongful Acts",
+      "rule": "Where, by any wrongful act or omission of any partner acting in the ordinary course of the business of the partnership or with the authority of his co-partners, loss or injury is caused to any person, not being a partner in the partnership, or any penalty is incurred, the partnership is liable therefor to the same extent as the partner so acting or omitting to act.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1824",
+      "topic": "Solidary Liability of Partners",
+      "rule": "All partners are liable solidarily with the partnership for everything chargeable to the partnership under articles 1822 and 1823.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1825",
+      "topic": "Partnership by Estoppel",
+      "rule": "When a person, by words spoken or written or by conduct, represents himself, or consents to another representing him to anyone, as a partner in an existing partnership, he is liable to any such persons to whom such representation has been made, who has, on the faith of such representation, given credit to the actual or apparent partnership.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1826",
+      "topic": "Liability of Incoming Partner",
+      "rule": "A person admitted as a partner into an existing partnership is liable for all the obligations of the partnership arising before his admission as though he had been a partner when such obligations were incurred, except that this liability shall be satisfied only out of partnership property, unless there is a stipulation to the contrary.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1827",
+      "topic": "Priority of Partnership Creditors",
+      "rule": "The creditors of the partnership shall be preferred to those of each partner as regards the partnership property. Without prejudice to this right, the private creditors of each partner may ask the attachment and public sale of the share of the latter in the partnership assets.",
+      "applies_to": ["THIRD_PARTY_OBLIGATIONS"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1828",
+      "topic": "Definition of Dissolution",
+      "rule": "The dissolution of a partnership is the change in the relation of the partners caused by any partner ceasing to be associated in the carrying on as distinguished from the winding up of the business.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1829",
+      "topic": "Effect of Dissolution",
+      "rule": "On dissolution the partnership is not terminated, but continues until the winding up of partnership affairs is completed.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1830",
+      "topic": "Causes of Dissolution",
+      "rule": "Dissolution is caused by: termination of definite term, express will of partner(s), expulsion, contravention of agreement, unlawful business, loss of contributed property, death, insolvency, civil interdiction of any partner, or by decree of court.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1831",
+      "topic": "Judicial Dissolution",
+      "rule": "On application by or for a partner the court shall decree a dissolution whenever: a partner is declared insane or becomes incapable, guilty of misconduct, commits breach of agreement, business can only be carried on at a loss, or other circumstances render dissolution equitable.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1832",
+      "topic": "Termination of Authority on Dissolution",
+      "rule": "Except so far as may be necessary to wind up partnership affairs or to complete transactions begun but not then finished, dissolution terminates all authority of any partner to act for the partnership.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1834",
+      "topic": "Partner's Authority After Dissolution",
+      "rule": "After dissolution, a partner can bind the partnership by any act appropriate for winding up partnership affairs or completing transactions unfinished at dissolution, subject to certain conditions regarding knowledge and notice of dissolution.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1835",
+      "topic": "Liability After Dissolution",
+      "rule": "The dissolution of the partnership does not of itself discharge the existing liability of any partner. The individual property of a deceased partner shall be liable for all obligations of the partnership incurred while he was a partner.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1836",
+      "topic": "Right to Wind Up",
+      "rule": "Unless otherwise agreed, the partners who have not wrongfully dissolved the partnership or the legal representative of the last surviving partner, not insolvent, has the right to wind up the partnership affairs.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1837",
+      "topic": "Rights on Dissolution",
+      "rule": "When dissolution is caused in any way, except in contravention of the partnership agreement, each partner may have the partnership property applied to discharge its liabilities, and the surplus applied to pay in cash the net amount owing to the respective partners.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1839",
+      "topic": "Settlement of Accounts",
+      "rule": "In settling accounts between the partners after dissolution, liabilities shall rank in order: creditors other than partners, partners other than for capital and profits, partners in respect of capital, partners in respect of profits.",
+      "applies_to": ["DISSOLUTION"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1843",
+      "topic": "Definition of Limited Partnership",
+      "rule": "A limited partnership is one formed by two or more persons having as members one or more general partners and one or more limited partners. The limited partners as such shall not be bound by the obligations of the partnership.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1844",
+      "topic": "Formation of Limited Partnership",
+      "rule": "Two or more persons desiring to form a limited partnership shall sign and swear to a certificate containing specified information and file it for record in the Office of the Securities and Exchange Commission.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1845",
+      "topic": "Limited Partner Contributions",
+      "rule": "The contributions of a limited partner may be cash or property, but not services.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1846",
+      "topic": "Limited Partner's Name in Firm Name",
+      "rule": "The surname of a limited partner shall not appear in the partnership name unless it is also the surname of a general partner or the business had been carried on under a name in which his surname appeared prior to becoming a limited partner.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1848",
+      "topic": "Limited Partner Liability",
+      "rule": "A limited partner shall not become liable as a general partner unless, in addition to the exercise of his rights and powers as a limited partner, he takes part in the control of the business.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1850",
+      "topic": "General Partner Authority in Limited Partnership",
+      "rule": "A general partner shall have all the rights and powers and be subject to all the restrictions and liabilities of a partner in a partnership without limited partners. Certain acts require written consent of all limited partners.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1851",
+      "topic": "Limited Partner Rights",
+      "rule": "A limited partner shall have the same rights as a general partner to inspect partnership books, have information, and have dissolution and winding up by decree of court.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1856",
+      "topic": "Distribution to Limited Partners",
+      "rule": "A limited partner may receive from the partnership the share of the profits or compensation stipulated for in the certificate; provided, that after such payment is made, the partnership assets are in excess of all liabilities of the partnership except liabilities to limited partners on account of their contributions and to general partners.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1857",
+      "topic": "Return of Limited Partner's Contribution",
+      "rule": "A limited partner shall not receive from a general partner or out of partnership property any part of his contributions until all liabilities of the partnership to third persons have been paid or there remains sufficient property to pay them.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1858",
+      "topic": "Limited Partner Liability for Contribution",
+      "rule": "A limited partner is liable to the partnership for the difference between his contribution as actually made and that stated in the certificate as having been made, and for any unpaid contribution which he agreed in the certificate to make in the future.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1859",
+      "topic": "Assignment of Limited Partner Interest",
+      "rule": "A limited partner's interest is assignable. An assignee becomes a substituted limited partner when the certificate is appropriately amended.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1860",
+      "topic": "Dissolution of Limited Partnership",
+      "rule": "The retirement, death, insolvency, insanity or civil interdiction of a general partner dissolves the partnership, unless the business is continued by the remaining general partners under a right stated in the certificate or with the consent of all members.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    },
+    {
+      "article": "1863",
+      "topic": "Priority of Claims in Limited Partnership",
+      "rule": "In settling accounts after dissolution, liabilities shall be paid in specified order: creditors except limited partners and general partners, limited partners for profits, limited partners for capital, general partners other than for capital and profits, general partners for profits, general partners for capital.",
+      "applies_to": ["LIMITED_PARTNERSHIP"],
+      "mandatory_clause": true
+    }
+  ]
+}
