@@ -1,0 +1,259 @@
+{
+  "law_name": "Philippine Civil Code - Partnership",
+  "contract_type": "PARTNERSHIP",
+  "title": "Title IX - Partnership",
+  "coverage": "General Provisions, Obligations of Partners, Dissolution and Winding Up, Limited Partnership",
+  
+  "required_clauses": [
+    {
+      "name": "partner_names",
+      "description": "Names of all partners",
+      "article": "Article 1767",
+      "requirement": "At least 2 partners required",
+      "mandatory": true
+    },
+    {
+      "name": "business_name",
+      "description": "Partnership firm name",
+      "article": "Article 1815",
+      "requirement": "Must operate under a firm name",
+      "mandatory": true
+    },
+    {
+      "name": "business_purpose",
+      "description": "Lawful object or purpose",
+      "article": "Article 1770",
+      "requirement": "Must have lawful object/purpose for common benefit",
+      "mandatory": true
+    },
+    {
+      "name": "capital_contribution",
+      "description": "Capital contributions of each partner",
+      "article": "Article 1767",
+      "requirement": "Partners must contribute money, property, or industry",
+      "mandatory": true
+    },
+    {
+      "name": "profit_sharing",
+      "description": "Distribution of profits and losses",
+      "article": "Article 1797",
+      "requirement": "Must specify profit/loss distribution",
+      "default": "In proportion to capital contributed"
+    },
+    {
+      "name": "partnership_type",
+      "description": "Type of partnership (general or limited)",
+      "article": "Article 1776",
+      "requirement": "Must specify if general or limited partnership",
+      "default": "General Partnership"
+    },
+    {
+      "name": "management",
+      "description": "Who manages the partnership",
+      "article": "Article 1800",
+      "requirement": "Specify managing partner(s) or all partners manage",
+      "default": "All partners have equal management rights"
+    },
+    {
+      "name": "partnership_duration",
+      "description": "Duration or term of partnership",
+      "article": "Article 1784",
+      "requirement": "May be for fixed term or at will",
+      "default": "At will (indefinite)"
+    },
+    {
+      "name": "principal_office",
+      "description": "Principal place of business",
+      "article": "Article 1805",
+      "requirement": "Where partnership books are kept",
+      "mandatory": true
+    }
+  ],
+  
+  "constraints": {
+    "capital_contribution": {
+      "min": 0,
+      "description": "No minimum capital required for general partnership"
+    },
+    "capital_for_sec_registration": {
+      "min": 3000,
+      "description": "Partnerships with PHP 3,000+ capital must register with SEC",
+      "article": "Article 1772"
+    },
+    "partnership_duration": {
+      "max": 99,
+      "unit": "years",
+      "description": "No partnership may exceed 99 years",
+      "article": "Article 1643 (by analogy)"
+    },
+    "number_of_partners": {
+      "min": 2,
+      "description": "At least 2 persons required to form partnership",
+      "article": "Article 1767"
+    }
+  },
+  
+  "mandatory_provisions": [
+    {
+      "name": "Equal Partnership",
+      "description": "No partner can be excluded from profits or losses",
+      "article": "Article 1799",
+      "rule": "Stipulation excluding partner from profits/losses is VOID"
+    },
+    {
+      "name": "Industrial Partner Protection",
+      "description": "Industrial partners not liable for losses",
+      "article": "Article 1797",
+      "rule": "Industrial partner shall not be liable for losses"
+    },
+    {
+      "name": "Partner Liability",
+      "description": "Partners liable pro rata after partnership assets exhausted",
+      "article": "Article 1816",
+      "rule": "All partners liable with all their property after partnership assets exhausted"
+    },
+    {
+      "name": "Partnership Books",
+      "description": "Partners must have access to books",
+      "article": "Article 1805",
+      "rule": "Every partner has right to inspect and copy partnership books"
+    },
+    {
+      "name": "Information Rights",
+      "description": "Partners entitled to full information",
+      "article": "Article 1806",
+      "rule": "Partners must render true and full information on demand"
+    },
+    {
+      "name": "Non-Compete (Industrial)",
+      "description": "Industrial partner cannot engage in same business",
+      "article": "Article 1789",
+      "rule": "Industrial partner cannot engage in business unless permitted"
+    },
+    {
+      "name": "Non-Compete (Capitalist)",
+      "description": "Capitalist partners cannot compete unless allowed",
+      "article": "Article 1808",
+      "rule": "Capitalist partners cannot engage in same business unless stipulated"
+    }
+  ],
+  
+  "registration_requirements": {
+    "sec_registration": {
+      "required_if": "Capital >= PHP 3,000 or immovable property contributed",
+      "article": "Article 1772",
+      "description": "Must be in public instrument and recorded with SEC"
+    },
+    "immovable_property": {
+      "required_if": "Immovable property or real rights contributed",
+      "article": "Article 1771, 1773",
+      "description": "Public instrument required + inventory signed and attached"
+    }
+  },
+  
+  "dissolution_causes": [
+    {
+      "cause": "Termination of definite term",
+      "article": "Article 1830",
+      "automatic": true
+    },
+    {
+      "cause": "Express will of any partner (at-will partnership)",
+      "article": "Article 1830",
+      "automatic": true
+    },
+    {
+      "cause": "Expulsion of partner",
+      "article": "Article 1830",
+      "automatic": true
+    },
+    {
+      "cause": "Death of any partner",
+      "article": "Article 1830",
+      "automatic": true
+    },
+    {
+      "cause": "Insolvency of partner or partnership",
+      "article": "Article 1830",
+      "automatic": true
+    },
+    {
+      "cause": "Civil interdiction of any partner",
+      "article": "Article 1830",
+      "automatic": true
+    },
+    {
+      "cause": "Judicial decree",
+      "article": "Article 1831",
+      "automatic": false
+    }
+  ],
+  
+  "partner_rights": [
+    {
+      "right": "Rights in specific partnership property",
+      "article": "Article 1810"
+    },
+    {
+      "right": "Interest in the partnership (share of profits/surplus)",
+      "article": "Article 1812"
+    },
+    {
+      "right": "Right to participate in management",
+      "article": "Article 1810"
+    },
+    {
+      "right": "Right to inspect books",
+      "article": "Article 1805"
+    },
+    {
+      "right": "Right to full information",
+      "article": "Article 1806"
+    },
+    {
+      "right": "Right to formal accounting",
+      "article": "Article 1809"
+    }
+  ],
+  
+  "special_rules": {
+    "limited_partnership": {
+      "formation": "Must file certificate with SEC",
+      "article": "Article 1844",
+      "limited_partner_contribution": "Cash or property, not services",
+      "limited_partner_liability": "Not liable if doesn't participate in control",
+      "general_partner_authority": "Same as general partnership"
+    },
+    "creditor_priority": {
+      "rule": "Partnership creditors preferred over personal creditors",
+      "article": "Article 1827"
+    },
+    "partnership_by_estoppel": {
+      "rule": "Person representing self as partner liable to those who relied on representation",
+      "article": "Article 1825"
+    }
+  },
+  
+  "validation_rules": {
+    "profit_exclusion_check": {
+      "description": "Contract is VOID if any partner excluded from profits/losses",
+      "article": "Article 1799",
+      "severity": "critical"
+    },
+    "lawful_purpose_check": {
+      "description": "Partnership must have lawful object",
+      "article": "Article 1770",
+      "severity": "critical"
+    },
+    "capital_registration_check": {
+      "description": "Capital >= PHP 3,000 requires SEC registration",
+      "article": "Article 1772",
+      "severity": "warning"
+    },
+    "immovable_property_check": {
+      "description": "Contributing immovable property requires public instrument and inventory",
+      "article": "Article 1773",
+      "severity": "critical"
+    }
+  }
+}
