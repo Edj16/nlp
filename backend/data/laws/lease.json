@@ -1,0 +1,266 @@
+{
+  "law_name": "Philippine Civil Code - Lease",
+  "contract_type": "LEASE",
+  "title": "Title VIII - Lease",
+  "coverage": "General Provisions, Rural and Urban Lease",
+  
+  "required_clauses": [
+    {
+      "name": "lessor_name",
+      "description": "Name of the lessor (property owner)",
+      "article": "Article 1643",
+      "requirement": "Must be clearly identified",
+      "mandatory": true
+    },
+    {
+      "name": "lessee_name",
+      "description": "Name of the lessee (tenant)",
+      "article": "Article 1643",
+      "requirement": "Must be clearly identified",
+      "mandatory": true
+    },
+    {
+      "name": "property_description",
+      "description": "Description of leased property",
+      "article": "Article 1643",
+      "requirement": "Must be determinate and described",
+      "mandatory": true
+    },
+    {
+      "name": "rental_amount",
+      "description": "Monthly or periodic rent amount",
+      "article": "Article 1643",
+      "requirement": "Price certain must be specified",
+      "mandatory": true
+    },
+    {
+      "name": "lease_duration",
+      "description": "Duration or term of lease",
+      "article": "Article 1643, 1687",
+      "requirement": "Fixed term or month-to-month",
+      "default": "Month-to-month"
+    },
+    {
+      "name": "start_date",
+      "description": "Lease commencement date",
+      "article": "Article 1669",
+      "requirement": "When lease begins",
+      "mandatory": true
+    },
+    {
+      "name": "payment_schedule",
+      "description": "When and how rent is paid",
+      "article": "Article 1679",
+      "requirement": "Time and manner of payment",
+      "default": "Monthly in advance"
+    },
+    {
+      "name": "security_deposit",
+      "description": "Advance deposit amount",
+      "article": "Common practice",
+      "requirement": "Usually 1-2 months rent",
+      "default": "One month rent"
+    },
+    {
+      "name": "utilities",
+      "description": "Who pays for utilities",
+      "article": "By agreement",
+      "requirement": "Specify responsibility for electricity, water, etc.",
+      "default": "Lessee pays utilities"
+    },
+    {
+      "name": "repairs",
+      "description": "Responsibility for repairs",
+      "article": "Article 1654",
+      "requirement": "Lessor makes necessary repairs; lessee responsible for minor",
+      "default": "Lessor: major repairs; Lessee: minor repairs"
+    }
+  ],
+  
+  "constraints": {
+    "lease_duration": {
+      "max": 99,
+      "unit": "years",
+      "description": "No lease exceeding 99 years is valid",
+      "article": "Article 1643"
+    },
+    "rental_amount": {
+      "min": 0,
+      "description": "Rent must be specified (free use is commodatum, not lease)"
+    },
+    "security_deposit": {
+      "max": 3,
+      "unit": "months",
+      "description": "Typical maximum is 3 months (1 month deposit + 2 months advance)",
+      "article": "Common practice (not legally limited)"
+    }
+  },
+  
+  "lessor_obligations": [
+    {
+      "obligation": "Deliver the property fit for intended use",
+      "article": "Article 1654",
+      "mandatory": true
+    },
+    {
+      "obligation": "Make necessary repairs to maintain property for intended use",
+      "article": "Article 1654",
+      "mandatory": true
+    },
+    {
+      "obligation": "Maintain lessee in peaceful enjoyment",
+      "article": "Article 1654",
+      "mandatory": true
+    },
+    {
+      "obligation": "Answer for warranty against hidden defects",
+      "article": "Article 1654",
+      "mandatory": true
+    }
+  ],
+  
+  "lessee_obligations": [
+    {
+      "obligation": "Pay the rent at agreed time and place",
+      "article": "Article 1657",
+      "mandatory": true
+    },
+    {
+      "obligation": "Use the property as a diligent father of a family",
+      "article": "Article 1657",
+      "mandatory": true
+    },
+    {
+      "obligation": "Pay for expenses of the deed of lease",
+      "article": "Article 1657",
+      "mandatory": true
+    },
+    {
+      "obligation": "Return the property upon termination",
+      "article": "Article 1665",
+      "mandatory": true
+    },
+    {
+      "obligation": "Inform lessor of urgent repairs needed",
+      "article": "Article 1654",
+      "mandatory": true
+    }
+  ],
+  
+  "termination_grounds": [
+    {
+      "ground": "Expiration of fixed term",
+      "article": "Article 1669",
+      "notice_required": false,
+      "description": "Lease ends automatically on fixed date"
+    },
+    {
+      "ground": "Non-payment of rent",
+      "article": "Article 1673",
+      "notice_required": true,
+      "description": "Lessor may eject for non-payment"
+    },
+    {
+      "ground": "Violation of contract conditions",
+      "article": "Article 1673",
+      "notice_required": true,
+      "description": "Breach of lease terms"
+    },
+    {
+      "ground": "Property used for illegal/immoral purpose",
+      "article": "Article 1673",
+      "notice_required": true,
+      "description": "Lessee uses property improperly"
+    },
+    {
+      "ground": "Imminent danger to life or health",
+      "article": "Article 1660",
+      "notice_required": false,
+      "description": "Lessee may immediately terminate"
+    }
+  ],
+  
+  "notice_periods": {
+    "no_fixed_term": {
+      "description": "For leases without fixed term, notice depends on payment frequency",
+      "article": "Article 1687",
+      "daily_rent": "3 days notice",
+      "weekly_rent": "7 days notice",
+      "monthly_rent": "30 days notice",
+      "annual_rent": "90 days notice"
+    },
+    "fixed_term": {
+      "description": "Fixed-term lease ends on specified date without need for demand",
+      "article": "Article 1669",
+      "notice": "Not required"
+    }
+  },
+  
+  "special_provisions": {
+    "sublease": {
+      "rule": "Lessee may sublet unless expressly prohibited",
+      "article": "Article 1650",
+      "description": "Sublease allowed if no prohibition in contract"
+    },
+    "assignment": {
+      "rule": "Cannot assign without lessor consent unless stipulated",
+      "article": "Article 1649",
+      "description": "Assignment requires lessor permission"
+    },
+    "implied_new_lease": {
+      "rule": "Continued possession 15 days with lessor acquiescence = new lease",
+      "article": "Article 1670",
+      "description": "Tacit renewal under same terms"
+    },
+    "suspension_of_rent": {
+      "rule": "Lessee may suspend rent if lessor fails to make necessary repairs",
+      "article": "Article 1658",
+      "description": "Right to withhold rent for material breach"
+    },
+    "dangerous_condition": {
+      "rule": "Lessee may immediately terminate if property poses danger",
+      "article": "Article 1660",
+      "description": "Imminent danger to life/health allows immediate exit"
+    }
+  },
+  
+  "prohibited_items": {
+    "consumable_goods": {
+      "rule": "Cannot lease consumable goods except for exhibition or accessories",
+      "article": "Article 1645",
+      "description": "Lease is for use, not consumption"
+    }
+  },
+  
+  "validation_rules": {
+    "duration_check": {
+      "description": "Lease cannot exceed 99 years",
+      "article": "Article 1643",
+      "severity": "critical"
+    },
+    "rent_specified_check": {
+      "description": "Rental amount must be specified",
+      "article": "Article 1643",
+      "severity": "critical"
+    },
+    "property_description_check": {
+      "description": "Property must be adequately described",
+      "article": "Article 1643",
+      "severity": "critical"
+    },
+    "notice_period_check": {
+      "description": "If no fixed term, ensure proper notice periods",
+      "article": "Article 1687",
+      "severity": "warning"
+    }
+  },
+  
+  "default_terms": {
+    "payment_schedule": "Monthly in advance",
+    "payment_location": "At lessor's residence or place of business",
+    "lease_type": "Month-to-month (if no term specified)",
+    "repairs": "Lessor: necessary repairs; Lessee: minor maintenance",
+    "utilities": "Lessee responsible unless otherwise stated",
+    "security_deposit": "One month rent"
+  }
+}

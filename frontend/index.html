@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KontrataPH - Intelligent Contract Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">⚖️ KontrataPH</div>
+        <div class="header-actions">
+            <button class="header-btn" onclick="toggleSidebar('preview')">
+                📄 Preview
+            </button>
+            <button class="header-btn" onclick="toggleSidebar('history')">
+                📚 History
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant">
+                    <div class="message-avatar"><img src="images/bot-avatar.jpg" alt="Bot"></div>
+                    <div class="message-content">Hello! I'm KontrataPH, your contract assistant. I can help you generate or analyze business contracts. What would you like to do today?</div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <!-- File Indicator -->
+                <div id="fileIndicator" class="file-indicator" style="display: none;">
+                    <span>📎 <span id="fileName"></span></span>
+                    <button onclick="clearFile()" class="clear-file-btn">✕</button>
+                </div>
+
+                <!-- Input -->
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        class="message-input"
+                        placeholder="Type your message here..."
+                        rows="1"
+                    ></textarea>
+                    
+                    <div class="input-actions">
+                        <label for="fileInput" class="icon-btn attach-btn" title="Attach file">
+                            📎
+                        </label>
+                        <input 
+                            type="file" 
+                            id="fileInput" 
+                            accept=".pdf,.docx,.txt"
+                            style="display: none;"
+                            onchange="handleFileSelect(event)"
+                        />
+                        
+                        <button onclick="sendMessage()" id="sendBtn" class="icon-btn send-btn" title="Send">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title" id="sidebarTitle">Contract Preview</div>
+                <button class="close-sidebar" onclick="closeSidebar()">×</button>
+            </div>
+
+            <div class="sidebar-tabs">
+                <button class="sidebar-tab active" onclick="switchTab('preview')" id="previewTab">
+                    Preview
+                </button>
+                <button class="sidebar-tab" onclick="switchTab('history')" id="historyTab">
+                    History
+                </button>
+            </div>
+
+            <div class="sidebar-content">
+                <!-- Preview Tab -->
+                <div id="previewContent" class="tab-content">
+                    <div class="empty-preview">
+                        <div class="empty-preview-icon">📄</div>
+                        <div>No contract to preview</div>
+                        <div style="font-size: 12px; margin-top: 8px;">Generate or analyze a contract to see it here</div>
+                    </div>
+                </div>
+
+                <!-- History Tab -->
+                <div id="historyContent" class="tab-content" style="display: none;">
+                    <div class="empty-history">
+                        <div style="font-size: 48px; margin-bottom: 12px;">📚</div>
+                        <div>No history yet</div>
+                        <div style="font-size: 12px; margin-top: 8px;">Your contracts will appear here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
