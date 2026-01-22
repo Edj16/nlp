@@ -27,36 +27,55 @@ EMPLOYER: {employer}
 EMPLOYEE: {employee}
 
 ARTICLE 1 - POSITION AND DUTIES
-The Employee is hired for the position of {position}.
-Place of Work: {place_of_work}
+The Employee is hired for the position of {position}, with duties to be performed faithfully and efficiently, in accordance with Article 1709 of the Civil Code and Book III of the Labor Code. Place of Work: {place_of_work}.
 
 ARTICLE 2 - COMPENSATION
-2.1 Basic Salary: PHP {salary} per month
-2.2 13th Month Pay as mandated by Philippine law
-2.3 Other benefits: {benefits}
+2.1 Basic Salary: PHP {salary} per month, subject to minimum wage laws under Article 124 of the Labor Code and Regional Tripartite Wages and Productivity Boards (RTWPBs) per RA 6727.
+
+2.2 13th Month Pay: As mandated by Presidential Decree No. 851, equivalent to 1/12 of the annual basic salary, due on or before December 24.
+
+2.3 Other benefits: {benefits}, including mandatory contributions to SSS (RA 11199), PhilHealth (RA 11223), and Pag-IBIG (RA 9679). Overtime pay at 125% for regular days and 130% for rest days/holidays (Article 87 of the Labor Code).
 
 ARTICLE 3 - EMPLOYMENT PERIOD
-Employment Type: {employment_type}
-Start Date: {start_date}
+Employment Type: {employment_type} (Regular under Article 280 of the Labor Code unless probationary or project-based). Start Date: {start_date}. Probationary period shall not exceed 6 months (Article 281).
 
 ARTICLE 4 - WORKING HOURS
-Standard working hours: {work_hours}
+Standard working hours: {work_hours}, not to exceed 8 hours per day or 48 hours per week (Article 83 of the Labor Code). At least 24 consecutive hours rest per week (Article 91).
 
 ARTICLE 5 - LEAVES
-5.1 Vacation Leave: As per Labor Code
-5.2 Sick Leave: As per Labor Code
-5.3 Other leaves as mandated by law
+5.1 Service Incentive Leave: 5 days per year after 1 year of service (Article 95 of the Labor Code).
+
+5.2 Maternity Leave: 105 days (120 for solo parents) under RA 11210.
+
+5.3 Paternity Leave: 7 days for married male employees under RA 8187.
+
+5.4 Other leaves: Parental leave for solo parents (7 days under RA 8972), special leave for women (2 days under RA 9710), and VAWC leave (10 days under RA 9262).
 
 ARTICLE 6 - TERMINATION
-6.1 By either party with thirty (30) days notice
-6.2 Just causes as defined in the Labor Code
+6.1 Just Causes: Serious misconduct, gross neglect, fraud, or analogous causes (Article 297 of the Labor Code), requiring due process (two written notices and hearing).
+
+6.2 Authorized Causes: Redundancy, retrenchment, closure, or disease (Article 298), with 30 days notice to employee and DOLE, plus separation pay (1 month per year of service).
+
+6.3 Security of Tenure: Regular employees cannot be dismissed without just or authorized cause (Article 294).
+
+ARTICLE 7 - SPECIAL PROTECTIONS
+7.1 Non-Diminution of Benefits: Benefits cannot be reduced once granted (Article 100).
+
+7.2 Equal Pay for Equal Work: No discrimination in wages (Article 135).
+
+7.3 Anti-Discrimination: Protection against age, sex, religion, or other discrimination (Article 135, RA 10911).
+
+7.4 Data Privacy: Employee personal data protected (RA 10173).
+
+7.5 Anti-Sexual Harassment: Workplace free from harassment (RA 7877, RA 11313).
+
 """
 
         # Add special clauses if any
         if special_clauses:
-            contract += "\nARTICLE 7 - SPECIAL PROVISIONS\n\n"
+            contract += "\nARTICLE 8 - SPECIAL PROVISIONS\n\n"
             for i, clause in enumerate(special_clauses, 1):
-                contract += f"7.{i} {clause}\n\n"
+                contract += f"8.{i} {clause}\n\n"
 
         # Add applicable laws
         if applicable_laws:
@@ -72,6 +91,8 @@ IN WITNESS WHEREOF, the parties have executed this Contract on the date first wr
 _________________          _________________
 {employer}                 {employee}
 EMPLOYER                   EMPLOYEE
+
+Disclaimer: This template is for informational purposes only and does not constitute legal advice. It is recommended to consult a qualified attorney to ensure compliance with applicable laws and to tailor the contract to your specific circumstances.
 """
         
         return contract

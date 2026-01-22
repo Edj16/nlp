@@ -80,7 +80,7 @@ ARTICLE 2 - PURPOSE AND NATURE OF BUSINESS
 
 2.1 The partnership is formed for the purpose of {details.get('business_purpose', 'conducting lawful business activities')}.
 
-2.2 This is a {partnership_type} Partnership as defined under Philippine law.
+2.2 This is a {partnership_type} Partnership as defined under Articles 1767-1867 of the Civil Code of the Philippines.
 
 ARTICLE 3 - CAPITAL CONTRIBUTIONS
 
@@ -94,17 +94,17 @@ ARTICLE 3 - CAPITAL CONTRIBUTIONS
             content += f"3.1 Each Partner shall contribute capital totaling: PHP {capital}\n"
         
         content += f"""
-3.2 Additional capital contributions may be required with the unanimous consent of all Partners.
+3.2 Additional capital contributions may be required with the unanimous consent of all Partners, pursuant to Article 1786 of the Civil Code.
 
 ARTICLE 4 - PROFIT AND LOSS DISTRIBUTION
 
-4.1 Profits and losses shall be shared among the Partners in the following ratio: {profit_ratio}
+4.1 Profits and losses shall be shared among the Partners in the following ratio: {profit_ratio}, subject to Article 1797 of the Civil Code.
 
 4.2 Distributions shall be made quarterly unless otherwise agreed by all Partners.
 
 ARTICLE 5 - MANAGEMENT AND DUTIES
 
-5.1 Each Partner shall have equal rights in the management of the partnership business.
+5.1 Each Partner shall have equal rights in the management of the partnership business, in accordance with Article 1800 of the Civil Code.
 
 5.2 Major decisions requiring unanimous consent include:
     a) Admission of new partners
@@ -112,11 +112,11 @@ ARTICLE 5 - MANAGEMENT AND DUTIES
     c) Dissolution of partnership
     d) Amendment of this Agreement
 
-5.3 All Partners shall devote reasonable time and effort to the partnership business.
+5.3 All Partners shall devote reasonable time and effort to the partnership business, as per Article 1789 of the Civil Code.
 
 ARTICLE 6 - BOOKS AND RECORDS
 
-6.1 Proper books of account shall be maintained at the principal place of business.
+6.1 Proper books of account shall be maintained at the principal place of business, pursuant to Article 1801 of the Civil Code.
 
 6.2 Each Partner shall have access to inspect the books and records at reasonable times.
 
@@ -132,15 +132,15 @@ ARTICLE 8 - TERMINATION AND DISSOLUTION
     a) By mutual written consent of all Partners
     b) Upon completion of the partnership purpose
     c) By operation of law
-    d) Upon death or incapacity of a Partner (unless otherwise agreed)
+    d) Upon death or incapacity of a Partner (unless otherwise agreed), in accordance with Article 1830 of the Civil Code.
 
-8.2 Upon dissolution, assets shall be liquidated and distributed according to capital contributions after payment of debts.
+8.2 Upon dissolution, assets shall be liquidated and distributed according to capital contributions after payment of debts, subject to Article 1831 of the Civil Code.
 
 ARTICLE 9 - ADMISSION AND WITHDRAWAL OF PARTNERS
 
-9.1 New partners may be admitted only with unanimous consent of existing Partners.
+9.1 New partners may be admitted only with unanimous consent of existing Partners, pursuant to Article 1804 of the Civil Code.
 
-9.2 A Partner wishing to withdraw must provide sixty (60) days written notice.
+9.2 A Partner wishing to withdraw must provide sixty (60) days written notice, subject to Article 1830 of the Civil Code.
 
 """
         
@@ -199,6 +199,7 @@ BEFORE ME, a Notary Public for and in the above jurisdiction, personally appeare
             content += f"{partner} - with identification\n"
         
         content += f"""
+
 known to me and to me known to be the same persons who executed the foregoing instrument and acknowledged to me that the same is their free and voluntary act and deed.
 
 WITNESS MY HAND AND SEAL on this {date_signed}.
