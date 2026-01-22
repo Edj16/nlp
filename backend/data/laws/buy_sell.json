@@ -41,18 +41,32 @@
       "default": "At time and place of delivery"
     },
     {
-      "name": "delivery_terms",
-      "description": "When and where item is delivered",
+      "name": "delivery_date",
+      "description": "When item is delivered",
       "article": "Article 1497",
       "requirement": "Transfer of control and possession",
-      "mandatory": false
+      "mandatory": true
     },
     {
-      "name": "sale_type",
-      "description": "Absolute or conditional sale",
-      "article": "Article 1458",
-      "requirement": "Specify if sale is absolute or conditional",
-      "default": "Absolute sale"
+      "name": "delivery_place",
+      "description": "Where item is delivered",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
+    },
+    {
+      "name": "delivery_method",
+      "description": "Where item is delivered",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
+    },
+    {
+      "name": "delivery_cost",
+      "description": "Who bears delivery cost",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
     }
   ],
   

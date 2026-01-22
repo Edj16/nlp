@@ -20,13 +20,6 @@
       "mandatory": true
     },
     {
-      "name": "business_purpose",
-      "description": "Lawful object or purpose",
-      "article": "Article 1770",
-      "requirement": "Must have lawful object/purpose for common benefit",
-      "mandatory": true
-    },
-    {
       "name": "capital_contribution",
       "description": "Capital contributions of each partner",
       "article": "Article 1767",

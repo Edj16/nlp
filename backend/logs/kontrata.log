@@ -3378,3 +3378,233 @@ Partner B: Jaedan Bahala
 2026-01-21 09:53:40.749 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: partnership.json
 2026-01-21 09:53:40.750 | INFO     | agents.contract_agent:__init__:55 - ProperLLMAgent initialized (Ollama: ✓, Laws: 4)
 2026-01-21 09:53:40.753 | INFO     | __main__:<module>:282 - Starting KontrataPH LLM API server on 0.0.0.0:5000
+2026-01-22 20:03:08.895 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: buy_sell.json
+2026-01-22 20:03:08.902 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: employment.json
+2026-01-22 20:03:08.904 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: lease.json
+2026-01-22 20:03:08.906 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: partnership.json
+2026-01-22 20:03:08.906 | INFO     | agents.contract_agent:__init__:55 - ProperLLMAgent initialized (Ollama: ✗, Laws: 4)
+2026-01-22 20:03:08.913 | INFO     | __main__:<module>:282 - Starting KontrataPH LLM API server on 0.0.0.0:5000
+2026-01-22 20:03:23.203 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: buy_sell.json
+2026-01-22 20:03:23.204 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: employment.json
+2026-01-22 20:03:23.205 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: lease.json
+2026-01-22 20:03:23.207 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: partnership.json
+2026-01-22 20:03:23.207 | INFO     | agents.contract_agent:__init__:55 - ProperLLMAgent initialized (Ollama: ✗, Laws: 4)
+2026-01-22 20:03:23.214 | INFO     | __main__:<module>:282 - Starting KontrataPH LLM API server on 0.0.0.0:5000
+2026-01-22 20:03:23.292 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083383427, Message: hi
+2026-01-22 20:03:23.293 | INFO     | agents.contract_agent:_detect_intent_c1:270 - Detecting intent for: 'hi'
+2026-01-22 20:03:23.294 | INFO     | agents.contract_agent:_detect_intent_c1:278 -   -> GREETING detected
+2026-01-22 20:03:23.294 | INFO     | agents.contract_agent:process_message:1170 - Intent: GREETING
+2026-01-22 20:03:38.429 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083383427, Message: generate me partnership contract
+2026-01-22 20:03:38.430 | INFO     | agents.contract_agent:_detect_intent_c1:270 - Detecting intent for: 'generate me partnership contract'
+2026-01-22 20:03:38.431 | INFO     | agents.contract_agent:_detect_contract_type:386 -     Contract type: PARTNERSHIP (matched: \bpartnership\b)
+2026-01-22 20:03:38.432 | INFO     | agents.contract_agent:_detect_intent_c1:309 -   -> CREATE_CONTRACT detected (type: PARTNERSHIP)
+2026-01-22 20:03:38.432 | INFO     | agents.contract_agent:process_message:1170 - Intent: CREATE_CONTRACT
+2026-01-22 20:03:38.446 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partner_names (default: ['[FIRST PARTNER]', '[SECOND P)
+2026-01-22 20:03:38.448 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_name (default: '[BUSINESS NAME]')
+2026-01-22 20:03:38.449 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partnership_type (default: 'general')
+2026-01-22 20:03:38.450 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: capital_contribution (default: '[CAPITAL AMOUNT]')
+2026-01-22 20:03:38.450 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: profit_sharing_ratio (default: '[RATIO]')
+2026-01-22 20:03:38.450 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_address (default: '[BUSINESS ADDRESS]')
+2026-01-22 20:03:38.451 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: date (default: datetime.now()
+2026-01-22 20:03:38.452 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: principal_office (default: address)
+2026-01-22 20:03:38.452 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_purpose (default: 'conducting lawful business ac)
+2026-01-22 20:03:38.454 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 9 required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:38.497 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {}
+2026-01-22 20:03:38.506 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partner_names (default: ['[FIRST PARTNER]', '[SECOND P)
+2026-01-22 20:03:38.507 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_name (default: '[BUSINESS NAME]')
+2026-01-22 20:03:38.507 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partnership_type (default: 'general')
+2026-01-22 20:03:38.509 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: capital_contribution (default: '[CAPITAL AMOUNT]')
+2026-01-22 20:03:38.510 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: profit_sharing_ratio (default: '[RATIO]')
+2026-01-22 20:03:38.510 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_address (default: '[BUSINESS ADDRESS]')
+2026-01-22 20:03:38.511 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: date (default: datetime.now()
+2026-01-22 20:03:38.512 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: principal_office (default: address)
+2026-01-22 20:03:38.512 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_purpose (default: 'conducting lawful business ac)
+2026-01-22 20:03:38.513 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 9 required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:38.513 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:38.514 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: []
+2026-01-22 20:03:38.515 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:51.324 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083383427, Message: • Partner Names: Mark Joseph and Jaedan Bahala
+  • Business Name: Mark's Company Startup
+  • Busines
+2026-01-22 20:03:51.333 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partner_names (default: ['[FIRST PARTNER]', '[SECOND P)
+2026-01-22 20:03:51.334 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_name (default: '[BUSINESS NAME]')
+2026-01-22 20:03:51.334 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partnership_type (default: 'general')
+2026-01-22 20:03:51.335 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: capital_contribution (default: '[CAPITAL AMOUNT]')
+2026-01-22 20:03:51.335 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: profit_sharing_ratio (default: '[RATIO]')
+2026-01-22 20:03:51.337 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_address (default: '[BUSINESS ADDRESS]')
+2026-01-22 20:03:51.337 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: date (default: datetime.now()
+2026-01-22 20:03:51.338 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: principal_office (default: address)
+2026-01-22 20:03:51.339 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_purpose (default: 'conducting lawful business ac)
+2026-01-22 20:03:51.339 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 9 required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:51.434 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {'partner_names': ['Mark Joseph', 'Jaedan Bahala'], 'business_name': "Mark's Company Startup", 'partnership_type': 'idk man', 'capital_contribution': '50', 'profit_sharing_ratio': '50/50', 'business_address': 'polytechnic university of the philippines', 'date': 'january 20', 'principal_office': 'amihan office', 'business_purpose': 'support'}
+2026-01-22 20:03:51.443 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partner_names (default: ['[FIRST PARTNER]', '[SECOND P)
+2026-01-22 20:03:51.444 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_name (default: '[BUSINESS NAME]')
+2026-01-22 20:03:51.444 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partnership_type (default: 'general')
+2026-01-22 20:03:51.445 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: capital_contribution (default: '[CAPITAL AMOUNT]')
+2026-01-22 20:03:51.446 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: profit_sharing_ratio (default: '[RATIO]')
+2026-01-22 20:03:51.446 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_address (default: '[BUSINESS ADDRESS]')
+2026-01-22 20:03:51.447 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: date (default: datetime.now()
+2026-01-22 20:03:51.447 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: principal_office (default: address)
+2026-01-22 20:03:51.448 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_purpose (default: 'conducting lawful business ac)
+2026-01-22 20:03:51.448 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 9 required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:51.450 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:51.451 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:51.452 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: []
+2026-01-22 20:03:53.894 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083383427, Message: none
+2026-01-22 20:03:53.906 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partner_names (default: ['[FIRST PARTNER]', '[SECOND P)
+2026-01-22 20:03:53.907 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_name (default: '[BUSINESS NAME]')
+2026-01-22 20:03:53.908 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partnership_type (default: 'general')
+2026-01-22 20:03:53.909 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: capital_contribution (default: '[CAPITAL AMOUNT]')
+2026-01-22 20:03:53.909 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: profit_sharing_ratio (default: '[RATIO]')
+2026-01-22 20:03:53.911 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_address (default: '[BUSINESS ADDRESS]')
+2026-01-22 20:03:53.911 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: date (default: datetime.now()
+2026-01-22 20:03:53.913 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: principal_office (default: address)
+2026-01-22 20:03:53.914 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_purpose (default: 'conducting lawful business ac)
+2026-01-22 20:03:53.915 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 9 required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:53.940 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {}
+2026-01-22 20:03:53.947 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partner_names (default: ['[FIRST PARTNER]', '[SECOND P)
+2026-01-22 20:03:53.948 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_name (default: '[BUSINESS NAME]')
+2026-01-22 20:03:53.948 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: partnership_type (default: 'general')
+2026-01-22 20:03:53.950 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: capital_contribution (default: '[CAPITAL AMOUNT]')
+2026-01-22 20:03:53.950 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: profit_sharing_ratio (default: '[RATIO]')
+2026-01-22 20:03:53.950 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_address (default: '[BUSINESS ADDRESS]')
+2026-01-22 20:03:53.951 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: date (default: datetime.now()
+2026-01-22 20:03:53.951 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: principal_office (default: address)
+2026-01-22 20:03:53.952 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: business_purpose (default: 'conducting lawful business ac)
+2026-01-22 20:03:53.952 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 9 required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:53.952 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for PARTNERSHIP: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:53.954 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: ['partner_names', 'business_name', 'partnership_type', 'capital_contribution', 'profit_sharing_ratio', 'business_address', 'date', 'principal_office', 'business_purpose']
+2026-01-22 20:03:53.954 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: []
+2026-01-22 20:03:53.958 | INFO     | agents.contract_agent:_format_contract_inputs:1438 - Formatted inputs: {'partner_names': ['Mark Joseph', 'Jaedan Bahala'], 'business_name': "Mark's Company Startup", 'partnership_type': 'idk man', 'capital_contribution': '50', 'profit_sharing_ratio': '50/50', 'business_address': 'Polytechnic University of the Philippines', 'date': 'January 20', 'principal_office': 'amihan office', 'business_purpose': 'support', 'profit_sharing': 'In proportion to capital contributed', 'management': 'All partners have equal management rights', 'partnership_duration': 'At will (indefinite)'}
+2026-01-22 20:03:53.958 | INFO     | agents.contract_agent:_generate_contract_c5c6:1608 - Original details: {'partner_names': ['Mark Joseph', 'Jaedan Bahala'], 'business_name': "Mark's Company Startup", 'partnership_type': 'idk man', 'capital_contribution': '50', 'profit_sharing_ratio': '50/50', 'business_address': 'polytechnic university of the philippines', 'date': 'january 20', 'principal_office': 'amihan office', 'business_purpose': 'support', 'profit_sharing': 'In proportion to capital contributed', 'management': 'All partners have equal management rights', 'partnership_duration': 'At will (indefinite)'}
+2026-01-22 20:03:53.960 | INFO     | agents.contract_agent:_generate_contract_c5c6:1609 - Formatted details: {'partner_names': ['Mark Joseph', 'Jaedan Bahala'], 'business_name': "Mark's Company Startup", 'partnership_type': 'idk man', 'capital_contribution': '50', 'profit_sharing_ratio': '50/50', 'business_address': 'Polytechnic University of the Philippines', 'date': 'January 20', 'principal_office': 'amihan office', 'business_purpose': 'support', 'profit_sharing': 'In proportion to capital contributed', 'management': 'All partners have equal management rights', 'partnership_duration': 'At will (indefinite)'}
+2026-01-22 20:03:53.961 | INFO     | agents.contract_agent:_generate_contract_c5c6:1610 - Special clauses: []
+2026-01-22 20:03:54.629 | INFO     | utils.docx_generator:generate:22 - Generated DOCX: C:\nlp\backend\output\d9791bae.docx
+2026-01-22 20:05:26.395 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083439996, Message: hi
+2026-01-22 20:05:26.396 | INFO     | agents.contract_agent:_detect_intent_c1:270 - Detecting intent for: 'hi'
+2026-01-22 20:05:26.396 | INFO     | agents.contract_agent:_detect_intent_c1:278 -   -> GREETING detected
+2026-01-22 20:05:26.397 | INFO     | agents.contract_agent:process_message:1170 - Intent: GREETING
+2026-01-22 20:05:35.280 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083439996, Message: generate me a lease contract
+2026-01-22 20:05:35.281 | INFO     | agents.contract_agent:_detect_intent_c1:270 - Detecting intent for: 'generate me a lease contract'
+2026-01-22 20:05:35.283 | INFO     | agents.contract_agent:_detect_contract_type:386 -     Contract type: LEASE (matched: \blease\b)
+2026-01-22 20:05:35.284 | INFO     | agents.contract_agent:_detect_intent_c1:309 -   -> CREATE_CONTRACT detected (type: LEASE)
+2026-01-22 20:05:35.284 | INFO     | agents.contract_agent:process_message:1170 - Intent: CREATE_CONTRACT
+2026-01-22 20:05:35.298 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:05:35.299 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:05:35.300 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:05:35.300 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:05:35.302 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:05:35.302 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:05:35.303 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:05:35.304 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:05:35.304 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:35.336 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {}
+2026-01-22 20:05:35.341 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:05:35.342 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:05:35.342 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:05:35.343 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:05:35.344 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:05:35.344 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:05:35.344 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:05:35.345 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:05:35.345 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:35.346 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:35.347 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: []
+2026-01-22 20:05:35.347 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:49.073 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083439996, Message: • Lessor Name: Mark neypes
+  • Lessee Name: JAEDAN bahala
+  • Property Description: idk bla bla bla
+
+2026-01-22 20:05:49.077 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:05:49.077 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:05:49.079 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:05:49.080 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:05:49.080 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:05:49.081 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:05:49.081 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:05:49.082 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:05:49.082 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:49.184 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {'lessor_name': 'Mark Neypes', 'lessee_name': 'Jaedan Bahala', 'property_description': 'idk bla bla bla', 'rental_amount': '3'}
+2026-01-22 20:05:49.189 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:05:49.190 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:05:49.191 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:05:49.191 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:05:49.192 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:05:49.192 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:05:49.192 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:05:49.194 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:05:49.195 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:49.196 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:05:49.196 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: ['lessor_name', 'lessee_name', 'property_description', 'rental_amount']
+2026-01-22 20:05:49.197 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: ['property_address', 'lease_period', 'property_use']
+2026-01-22 20:06:01.215 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083439996, Message: • Property Address: Maui Oasis Building 5
+  • Property Use: wtf is this
+lease period: 1 year
+2026-01-22 20:06:01.220 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:06:01.220 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:06:01.221 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:06:01.222 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:06:01.222 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:06:01.223 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:06:01.223 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:06:01.225 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:06:01.226 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:01.263 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {'property_address': 'maui oasis building 5', 'lease_period': '1 year', 'property_use': 'wtf is this'}
+2026-01-22 20:06:01.269 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:06:01.270 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:06:01.270 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:06:01.271 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:06:01.271 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:06:01.272 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:06:01.272 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:06:01.273 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:06:01.273 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:01.275 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:01.275 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:01.276 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: []
+2026-01-22 20:06:21.430 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083439996, Message: add confidentiality terms
+2026-01-22 20:06:21.435 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:06:21.436 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:06:21.437 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:06:21.437 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:06:21.439 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:06:21.439 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:06:21.440 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:06:21.440 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:06:21.440 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:21.466 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {}
+2026-01-22 20:06:21.470 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:06:21.471 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:06:21.473 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:06:21.473 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:06:21.474 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:06:21.474 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:06:21.475 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:06:21.475 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:06:21.476 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:21.477 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:21.477 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:21.479 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: []
+2026-01-22 20:06:24.529 | INFO     | __main__:chat:91 - Chat request - Session: web-session-1769083439996, Message: done
+2026-01-22 20:06:24.536 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:06:24.537 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:06:24.538 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:06:24.540 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:06:24.542 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:06:24.543 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:06:24.543 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:06:24.544 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:06:24.544 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:24.562 | INFO     | agents.contract_agent:_handle_generation_flow:1252 - Extracted: {}
+2026-01-22 20:06:24.566 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessor_name (default: '[LESSOR NAME]')
+2026-01-22 20:06:24.566 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lessee_name (default: '[LESSEE NAME]')
+2026-01-22 20:06:24.567 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_address (default: '[PROPERTY ADDRESS]')
+2026-01-22 20:06:24.568 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_description (default: '[PROPERTY DESCRIPTION]')
+2026-01-22 20:06:24.568 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: rental_amount (default: '[RENTAL AMOUNT]')
+2026-01-22 20:06:24.570 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: lease_period (default: '[LEASE PERIOD]')
+2026-01-22 20:06:24.570 | INFO     | agents.contract_agent:_get_required_fields:175 -   ○ Optional: payment_terms (has meaningful default)
+2026-01-22 20:06:24.572 | INFO     | agents.contract_agent:_get_required_fields:173 -   ✓ Required: property_use (default: 'residential/commercial')
+2026-01-22 20:06:24.573 | INFO     | agents.contract_agent:_get_required_fields:187 -  Detected 7 required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:24.573 | INFO     | agents.contract_agent:_update_state_c2:671 - Required fields for LEASE: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:24.574 | INFO     | agents.contract_agent:_update_state_c2:691 - Filled: ['lessor_name', 'lessee_name', 'property_address', 'property_description', 'rental_amount', 'lease_period', 'property_use']
+2026-01-22 20:06:24.575 | INFO     | agents.contract_agent:_update_state_c2:692 - Missing: []

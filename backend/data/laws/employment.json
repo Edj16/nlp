@@ -48,18 +48,11 @@
       "mandatory": true
     },
     {
-      "name": "working_hours",
+      "name": "work_hours",
       "description": "Daily and weekly working hours",
       "article": "Labor Code Article 83",
       "requirement": "Normal: 8 hours/day, 48 hours/week",
       "default": "8 hours per day"
-    },
-    {
-      "name": "work_schedule",
-      "description": "Working days and rest days",
-      "article": "Labor Code Article 91",
-      "requirement": "At least 24 consecutive hours rest per week",
-      "default": "Monday to Saturday, rest on Sunday"
     },
     {
       "name": "place_of_work",

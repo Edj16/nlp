@@ -20,6 +20,13 @@
       "mandatory": true
     },
     {
+      "name": "property_address",
+      "description": "Address of leased property",
+      "article": "Article 1643",
+      "requirement": "Must be clearly defined",
+      "mandatory": true
+    },
+    {
       "name": "property_description",
       "description": "Description of leased property",
       "article": "Article 1643",
@@ -34,46 +41,18 @@
       "mandatory": true
     },
     {
-      "name": "lease_duration",
+      "name": "lease_period",
       "description": "Duration or term of lease",
       "article": "Article 1643, 1687",
       "requirement": "Fixed term or month-to-month",
       "default": "Month-to-month"
     },
     {
-      "name": "start_date",
-      "description": "Lease commencement date",
-      "article": "Article 1669",
-      "requirement": "When lease begins",
-      "mandatory": true
-    },
-    {
-      "name": "payment_schedule",
+      "name": "payment_terms",
       "description": "When and how rent is paid",
       "article": "Article 1679",
       "requirement": "Time and manner of payment",
       "default": "Monthly in advance"
-    },
-    {
-      "name": "security_deposit",
-      "description": "Advance deposit amount",
-      "article": "Common practice",
-      "requirement": "Usually 1-2 months rent",
-      "default": "One month rent"
-    },
-    {
-      "name": "utilities",
-      "description": "Who pays for utilities",
-      "article": "By agreement",
-      "requirement": "Specify responsibility for electricity, water, etc.",
-      "default": "Lessee pays utilities"
-    },
-    {
-      "name": "repairs",
-      "description": "Responsibility for repairs",
-      "article": "Article 1654",
-      "requirement": "Lessor makes necessary repairs; lessee responsible for minor",
-      "default": "Lessor: major repairs; Lessee: minor repairs"
     }
   ],
   
