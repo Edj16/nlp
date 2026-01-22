@@ -255,5 +255,109 @@
       "article": "Article 1773",
       "severity": "critical"
     }
+  },
+
+  "supplemental_laws": [
+    {
+      "law_name": "Revised Corporation Code of the Philippines",
+      "republic_act": "RA 11232",
+      "coverage": "Distinction between partnerships and corporations; conversion and registration rules",
+      "administered_by": "Securities and Exchange Commission (SEC)",
+      "notes": "Applies when partnership structure overlaps with corporate characteristics"
+    },
+    {
+      "law_name": "Civil Code – Special Partnership Provisions",
+      "coverage": "Limited partnerships, professional partnerships, partnership by estoppel",
+      "articles": "Articles 1843–1867",
+      "notes": "Special rules modifying general partnership principles"
+    }
+  ],
+
+  "corporation_code_constraints": {
+    "juridical_personality_distinction": {
+      "rule": "Partnership is distinct from corporation and governed by Civil Code unless registered as corporation",
+      "republic_act": "RA 11232",
+      "section": "Section 2"
+    },
+    "prohibition_on_corporate_attributes": {
+      "rule": "Partnership shall not represent itself as a corporation",
+      "republic_act": "RA 11232",
+      "section": "Section 17"
+    }
+  },
+
+  "sec_compliance_rules": {
+    "registration_requirement": {
+      "rule": "Partnerships required to register with SEC if capital reaches statutory threshold or involves real property",
+      "republic_act": "RA 11232",
+      "section": "Section 17",
+      "related_civil_code_article": "Article 1772"
+    },
+    "name_verification": {
+      "rule": "Business name must not be misleading or identical to existing registered entities",
+      "republic_act": "RA 11232",
+      "section": "Section 17"
+    },
+    "conversion_to_corporation": {
+      "rule": "Partnership may convert to corporation subject to SEC approval",
+      "republic_act": "RA 11232",
+      "section": "Section 38"
+    }
+  },
+
+  "special_partnership_laws": {
+    "limited_partnership": {
+      "rule": "Limited partnership must register certificate with SEC",
+      "republic_act": "Civil Code",
+      "section": "Articles 1844–1848",
+      "mandatory": true
+    },
+    "professional_partnership": {
+      "rule": "Partnership formed for practice of profession is governed by special laws and professional regulations",
+      "republic_act": "Civil Code",
+      "section": "Article 1783",
+      "notes": "Subject to PRC and professional ethics rules"
+    },
+    "partnership_by_estoppel": {
+      "rule": "Persons representing themselves as partners are liable as such",
+      "republic_act": "Civil Code",
+      "section": "Article 1825"
+    }
+  },
+
+  "liability_boundary_rules": {
+    "personal_liability": {
+      "rule": "Partners remain personally liable unlike corporate shareholders",
+      "republic_act": "RA 11232",
+      "section": "Section 2",
+      "comparison_note": "Corporation limits liability to subscription"
+    },
+    "piercing_analogy_warning": {
+      "rule": "Use of partnership to evade law or defraud creditors may result in personal liability",
+      "republic_act": "RA 11232",
+      "section": "Section 130",
+      "notes": "Applied by analogy in jurisprudence"
+    }
+  },
+
+  "corporation_code_validation_rules": {
+    "misrepresentation_check": {
+      "description": "Ensure partnership is not falsely represented as a corporation",
+      "severity": "critical",
+      "republic_act": "RA 11232",
+      "section": "Section 17"
+    },
+    "sec_registration_check": {
+      "description": "Verify SEC registration when required",
+      "severity": "critical",
+      "republic_act": "RA 11232",
+      "section": "Section 17"
+    },
+    "limited_partnership_certificate_check": {
+      "description": "Limited partnership must have valid SEC certificate",
+      "severity": "critical",
+      "republic_act": "Civil Code",
+      "section": "Article 1844"
+    }
   }
 }

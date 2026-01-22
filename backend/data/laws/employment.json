@@ -320,5 +320,125 @@
     "no_wage_withholding": "Cannot withhold wages except for debt due",
     "no_free_household_service": "Household service without compensation is VOID",
     "no_benefit_diminution": "Cannot reduce benefits already granted"
+  },
+
+  "supplemental_laws": [
+    {
+      "law_name": "Wage Rationalization Act",
+      "republic_act": "RA 6727",
+      "coverage": "Minimum wage fixing, regional wage boards, wage orders",
+      "administered_by": "Regional Tripartite Wages and Productivity Boards (RTWPBs)",
+      "sections": "Sections 3–10",
+      "notes": "Supplements Labor Code Article 124 on minimum wage fixing"
+    },
+    {
+      "law_name": "Anti-Age Discrimination in Employment Act",
+      "republic_act": "RA 10911",
+      "coverage": "Prohibits age-based discrimination in employment",
+      "administered_by": "Department of Labor and Employment (DOLE)",
+      "sections": "Sections 2–7",
+      "notes": "Applies to hiring, promotion, training, compensation, and termination"
+    }
+  ],
+
+  "wage_rationalization_rules": {
+    "minimum_wage_setting": {
+      "rule": "Minimum wages shall be fixed by Regional Tripartite Wage Boards",
+      "republic_act": "RA 6727",
+      "section": "Section 3",
+      "related_labor_code_article": "Article 124"
+    },
+    "regional_variation": {
+      "rule": "Minimum wage may vary by region, industry, or sector",
+      "republic_act": "RA 6727",
+      "section": "Section 3"
+    },
+    "wage_order_effectivity": {
+      "rule": "Wage orders take effect after publication",
+      "republic_act": "RA 6727",
+      "section": "Section 4"
+    },
+    "exemptions": {
+      "rule": "RTWPBs may grant exemptions to distressed establishments",
+      "republic_act": "RA 6727",
+      "section": "Section 4"
+    },
+    "wage_distortion": {
+      "rule": "Employers must correct wage distortions caused by wage orders",
+      "republic_act": "RA 6727",
+      "section": "Section 5"
+    }
+  },
+
+  "anti_age_discrimination_rules": {
+    "prohibited_acts": [
+      {
+        "rule": "Declining employment application due to age",
+        "republic_act": "RA 10911",
+        "section": "Section 5(a)"
+      },
+      {
+        "rule": "Discriminating in compensation, benefits, or promotion based on age",
+        "republic_act": "RA 10911",
+        "section": "Section 5(b)"
+      },
+      {
+        "rule": "Forcing early retirement due to age",
+        "republic_act": "RA 10911",
+        "section": "Section 5(c)"
+      },
+      {
+        "rule": "Publishing job ads with age limits (unless bona fide occupational qualification)",
+        "republic_act": "RA 10911",
+        "section": "Section 5(d)"
+      }
+    ],
+    "lawful_exceptions": {
+      "rule": "Age limitation allowed only if it is a bona fide occupational qualification",
+      "republic_act": "RA 10911",
+      "section": "Section 6"
+    }
+  },
+
+  "employer_statutory_duties": {
+    "wage_compliance": {
+      "rule": "Employer must comply with applicable regional minimum wage orders",
+      "republic_act": "RA 6727",
+      "section": "Section 6"
+    },
+    "non_discrimination": {
+      "rule": "Employer must ensure equal opportunity regardless of age",
+      "republic_act": "RA 10911",
+      "section": "Section 4"
+    }
+  },
+
+  "labor_law_penalties": {
+    "wage_violation_penalty": {
+      "rule": "Non-compliance with wage orders subject to fines and penalties",
+      "republic_act": "RA 6727",
+      "section": "Section 7"
+    },
+    "age_discrimination_penalty": {
+      "rule": "Age discrimination punishable by fine and/or imprisonment",
+      "republic_act": "RA 10911",
+      "section": "Section 7"
+    }
+  },
+
+  "special_labor_validation_rules": {
+    "regional_wage_order_check": {
+      "description": "Verify salary complies with applicable regional wage order",
+      "severity": "critical",
+      "republic_act": "RA 6727",
+      "section": "Section 3"
+    },
+    "age_discrimination_check": {
+      "description": "Ensure no employment term discriminates based on age",
+      "severity": "critical",
+      "republic_act": "RA 10911",
+      "section": "Section 5"
+    }
   }
+
 }

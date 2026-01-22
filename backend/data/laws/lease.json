@@ -262,5 +262,135 @@
     "repairs": "Lessor: necessary repairs; Lessee: minor maintenance",
     "utilities": "Lessee responsible unless otherwise stated",
     "security_deposit": "One month rent"
+  },
+
+  "supplemental_laws": [
+    {
+      "law_name": "Rent Control Act of 2009",
+      "republic_act": "RA 9653",
+      "sections": "Sections 2–11",
+      "coverage": "Residential lease contracts under rent-controlled thresholds",
+      "administered_by": "Local Government Units (LGUs)",
+      "status": "Extended by subsequent laws",
+      "notes": "Applies only to residential units within rent ceilings set by law"
+    }
+  ],
+
+  "rent_control_applicability": {
+    "property_type": "Residential",
+    "applies_if": "Monthly rent is within rent ceiling set by law",
+    "section": "Section 3",
+    "does_not_apply_to": [
+      "Commercial units",
+      "Industrial units",
+      "Hotels, motels, inns, pension houses",
+      "Boarding houses with transient occupants"
+    ]
+  },
+
+  "rent_control_constraints": {
+    "annual_rent_increase_cap": {
+      "max_percentage": 7,
+      "condition": "Tenant remains in possession",
+      "republic_act": "RA 9653",
+      "section": "Section 4"
+    },
+    "security_deposit_limit": {
+      "max": 1,
+      "unit": "month rent",
+      "republic_act": "RA 9653",
+      "section": "Section 7"
+    },
+    "advance_rent_limit": {
+      "max": 1,
+      "unit": "month rent",
+      "republic_act": "RA 9653",
+      "section": "Section 7"
+    },
+    "prohibited_practices": [
+      {
+        "rule": "Demanding rent increases beyond the allowed annual cap",
+        "republic_act": "RA 9653",
+        "section": "Section 6"
+      },
+      {
+        "rule": "Collecting excessive security deposits or advance rent",
+        "republic_act": "RA 9653",
+        "section": "Section 7"
+      },
+      {
+        "rule": "Circumventing rent control limits through contract stipulations",
+        "republic_act": "RA 9653",
+        "section": "Section 6"
+      }
+    ]
+  },
+
+  "rent_control_termination_rules": [
+    {
+      "ground": "Non-payment of rent",
+      "notice_required": true,
+      "republic_act": "RA 9653",
+      "section": "Section 9"
+    },
+    {
+      "ground": "Violation of lease terms",
+      "notice_required": true,
+      "republic_act": "RA 9653",
+      "section": "Section 9"
+    },
+    {
+      "ground": "Legitimate need of owner to repossess property",
+      "notice_required": true,
+      "minimum_notice": "3 months",
+      "republic_act": "RA 9653",
+      "section": "Section 9"
+    },
+    {
+      "ground": "Sale or disposition of the leased property",
+      "notice_required": true,
+      "minimum_notice": "3 months",
+      "republic_act": "RA 9653",
+      "section": "Section 9"
+    }
+  ],
+
+  "rent_control_lessee_protections": [
+    {
+      "protection": "Protection against unreasonable rent increases",
+      "republic_act": "RA 9653",
+      "section": "Section 4"
+    },
+    {
+      "protection": "Right to refund of overpaid rent, deposits, or advance rent",
+      "republic_act": "RA 9653",
+      "section": "Section 7"
+    },
+    {
+      "protection": "Right to remain in possession while complying with lease obligations",
+      "republic_act": "RA 9653",
+      "section": "Section 5"
+    }
+  ],
+
+  "rent_control_validation_rules": {
+    "rent_ceiling_check": {
+      "description": "Determine whether the leased unit falls under rent control coverage",
+      "severity": "critical",
+      "republic_act": "RA 9653",
+      "section": "Section 3"
+    },
+    "rent_increase_limit_check": {
+      "description": "Ensure rent increase does not exceed the annual cap",
+      "severity": "critical",
+      "republic_act": "RA 9653",
+      "section": "Section 4"
+    },
+    "deposit_and_advance_limit_check": {
+      "description": "Ensure deposits and advance rent comply with statutory limits",
+      "severity": "critical",
+      "republic_act": "RA 9653",
+      "section": "Section 7"
+    }
   }
 }

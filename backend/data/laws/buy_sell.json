@@ -266,5 +266,166 @@
       "Sale not to be performed within one year"
     ],
     "note": "Oral contract is valid but not enforceable by action"
+  },
+
+  "consumer_act": {
+  "law_name": "Consumer Act of the Philippines",
+  "law_number": "Republic Act No. 7394",
+  "scope": "Consumer products and services for personal, family, or household use",
+  "applies_to": ["BUY_SELL", "SERVICE"],
+  "governing_agency": "Department of Trade and Industry (DTI)"
+  },
+
+  "consumer_parties": {
+  "consumer": {
+    "definition": "A natural person who purchases goods or services for personal, family, or household use",
+    "article": "RA 7394, Art. 4"
+  },
+  "supplier": {
+    "definition": "A person or entity engaged in the business of selling or supplying consumer products or services",
+    "article": "RA 7394, Art. 4"
   }
+  },
+  "consumer_rights": [
+  {
+    "right": "Right to safety",
+    "description": "Protection against hazardous goods and services",
+    "article": "RA 7394, Art. 3",
+    "mandatory": true,
+    "waivable": false
+  },
+  {
+    "right": "Right to information",
+    "description": "Right to accurate information on price, quality, and condition",
+    "article": "RA 7394, Art. 3",
+    "mandatory": true,
+    "waivable": false
+  },
+  {
+    "right": "Right to choose",
+    "description": "Access to a variety of goods and services at competitive prices",
+    "article": "RA 7394, Art. 3",
+    "mandatory": true,
+    "waivable": false
+  },
+  {
+    "right": "Right to redress",
+    "description": "Right to fair settlement of valid claims",
+    "article": "RA 7394, Art. 3",
+    "mandatory": true,
+    "waivable": false
+  }
+],
+
+"consumer_disclosure_requirements": [
+  {
+    "requirement": "Clear price display",
+    "description": "Total price including taxes and charges must be disclosed",
+    "article": "RA 7394, Art. 81",
+    "mandatory": true
+  },
+  {
+    "requirement": "No deceptive sales acts",
+    "description": "False, misleading, or deceptive representations are prohibited",
+    "article": "RA 7394, Art. 50",
+    "mandatory": true
+  },
+  {
+    "requirement": "Written warranty disclosure",
+    "description": "Warranty terms must be clearly stated and explained",
+    "article": "RA 7394, Art. 68",
+    "mandatory": true
+  }
+],
+
+"consumer_warranties": [
+  {
+    "type": "Implied Warranty of Merchantability",
+    "description": "Goods must be fit for ordinary purposes",
+    "article": "RA 7394, Art. 67",
+    "automatic": true,
+    "waivable": false
+  },
+  {
+    "type": "Implied Warranty of Fitness for Purpose",
+    "description": "Goods must be fit for the consumer’s disclosed purpose",
+    "article": "RA 7394, Art. 67",
+    "automatic": true,
+    "waivable": false
+  },
+  {
+    "type": "Express Warranty",
+    "description": "Any affirmation, promise, or description forming part of the bargain",
+    "article": "RA 7394, Art. 68",
+    "automatic": false,
+    "waivable": false
+  }
+],
+
+"service_contract_rules": {
+  "standard_of_service": {
+    "rule": "Service must be performed with due care, skill, and diligence",
+    "article": "RA 7394, Art. 55",
+    "mandatory": true
+  },
+  "price_estimate": {
+    "rule": "Consumer entitled to written estimate before service",
+    "article": "RA 7394, Art. 56",
+    "mandatory": true
+  },
+  "unauthorized_charges": {
+    "rule": "Supplier may not charge for services not authorized",
+    "article": "RA 7394, Art. 57",
+    "mandatory": true
+  }
+},
+
+"consumer_remedies": {
+  "defective_goods": [
+    "Repair",
+    "Replacement",
+    "Refund",
+    "Price reduction"
+  ],
+  "article": "RA 7394, Art. 97",
+  "administrative_remedies": [
+    "DTI complaint",
+    "Cease and desist order",
+    "Administrative fines"
+  ]
+},
+
+"prohibited_clauses": [
+  {
+    "clause": "Waiver of consumer rights",
+    "description": "Any stipulation waiving consumer protection is void",
+    "article": "RA 7394, Art. 23",
+    "severity": "critical"
+  },
+  {
+    "clause": "Unfair or unconscionable terms",
+    "description": "Terms grossly disadvantageous to the consumer",
+    "article": "RA 7394, Art. 52",
+    "severity": "critical"
+  }
+],
+
+"consumer_validation_rules": {
+  "consumer_purpose_check": {
+    "description": "Transaction must be for personal, family, or household use",
+    "article": "RA 7394, Art. 4",
+    "severity": "critical"
+  },
+  "disclosure_check": {
+    "description": "Failure to disclose material terms renders contract voidable",
+    "article": "RA 7394, Art. 81",
+    "severity": "critical"
+  },
+  "warranty_exclusion_check": {
+    "description": "Implied consumer warranties cannot be excluded",
+    "article": "RA 7394, Art. 67",
+    "severity": "critical"
+  }
+}
+
 }

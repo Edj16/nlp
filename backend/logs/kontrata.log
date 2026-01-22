@@ -3378,3 +3378,7 @@ Partner B: Jaedan Bahala
 2026-01-21 09:53:40.749 | INFO     | agents.contract_agent:_load_law_files:68 - Loaded law file: partnership.json
 2026-01-21 09:53:40.750 | INFO     | agents.contract_agent:__init__:55 - ProperLLMAgent initialized (Ollama: ✓, Laws: 4)
 2026-01-21 09:53:40.753 | INFO     | __main__:<module>:282 - Starting KontrataPH LLM API server on 0.0.0.0:5000
+2026-01-21 13:27:23.381 | INFO     | agents.contract_agent:__init__:55 - ProperLLMAgent initialized (Ollama: ✗, Laws: 0)
+2026-01-21 13:27:23.391 | INFO     | __main__:<module>:282 - Starting KontrataPH LLM API server on 0.0.0.0:5000
+2026-01-21 13:27:30.870 | INFO     | agents.contract_agent:__init__:55 - ProperLLMAgent initialized (Ollama: ✗, Laws: 0)
+2026-01-21 13:27:30.879 | INFO     | __main__:<module>:282 - Starting KontrataPH LLM API server on 0.0.0.0:5000
