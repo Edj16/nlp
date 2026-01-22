@@ -1,0 +1,317 @@
+{
+  "law_name": "Philippine Labor Code + Civil Code",
+  "contract_type": "EMPLOYMENT",
+  "title": "Employment Contracts - Labor Code and Civil Code Provisions",
+  "coverage": "Employment relationships, wages, benefits, termination, working conditions",
+  
+  "required_clauses": [
+    {
+      "name": "employer_name",
+      "description": "Name of the employer/company",
+      "article": "Labor Code Article 106",
+      "requirement": "Must be clearly identified",
+      "mandatory": true
+    },
+    {
+      "name": "employee_name",
+      "description": "Name of the employee/worker",
+      "article": "Labor Code Article 106",
+      "requirement": "Must be clearly identified",
+      "mandatory": true
+    },
+    {
+      "name": "position",
+      "description": "Job title and nature of work",
+      "article": "Labor Code Article 106",
+      "requirement": "Nature of work must be specified",
+      "mandatory": true
+    },
+    {
+      "name": "salary",
+      "description": "Compensation amount",
+      "article": "Labor Code Articles 97-101",
+      "requirement": "Must meet or exceed minimum wage",
+      "mandatory": true
+    },
+    {
+      "name": "employment_type",
+      "description": "Regular, probationary, project-based, casual",
+      "article": "Labor Code Article 280-295",
+      "requirement": "Must specify employment status",
+      "default": "Regular"
+    },
+    {
+      "name": "start_date",
+      "description": "Employment commencement date",
+      "article": "Labor Code Article 106",
+      "requirement": "Must be specified",
+      "mandatory": true
+    },
+    {
+      "name": "work_hours",
+      "description": "Daily and weekly working hours",
+      "article": "Labor Code Article 83",
+      "requirement": "Normal: 8 hours/day, 48 hours/week",
+      "default": "8 hours per day"
+    },
+    {
+      "name": "place_of_work",
+      "description": "Principal place of work",
+      "article": "General requirement",
+      "requirement": "Where employee will work",
+      "mandatory": true
+    }
+  ],
+  
+  "constraints": {
+    "salary": {
+      "min": 610,
+      "currency": "PHP",
+      "description": "Minimum wage in NCR (2024) - varies by region",
+      "article": "Labor Code Article 124, RTWPB Wage Orders"
+    },
+    "working_hours": {
+      "max": 8,
+      "unit": "hours per day",
+      "description": "Normal working hours",
+      "article": "Labor Code Article 83",
+      "overtime_rule": "Overtime pay +25% (regular days), +30% (rest days/holidays)"
+    },
+    "probationary_period": {
+      "max": 6,
+      "unit": "months",
+      "description": "Maximum probationary period",
+      "article": "Labor Code Article 281"
+    },
+    "rest_period": {
+      "min": 24,
+      "unit": "consecutive hours per week",
+      "description": "Weekly rest day",
+      "article": "Labor Code Article 91"
+    }
+  },
+  
+  "mandatory_benefits": [
+    {
+      "name": "SSS (Social Security System)",
+      "description": "Social security coverage",
+      "law": "RA 11199 (Social Security Act of 2018)",
+      "employer_contribution": "~9.5-12%",
+      "employee_contribution": "~4.5%",
+      "mandatory": true
+    },
+    {
+      "name": "PhilHealth",
+      "description": "National Health Insurance",
+      "law": "RA 11223 (Universal Health Care Act)",
+      "employer_contribution": "~2.5%",
+      "employee_contribution": "~2.5%",
+      "mandatory": true
+    },
+    {
+      "name": "Pag-IBIG (HDMF)",
+      "description": "Home Development Mutual Fund",
+      "law": "RA 9679",
+      "employer_contribution": "2%",
+      "employee_contribution": "2%",
+      "mandatory": true
+    },
+    {
+      "name": "13th Month Pay",
+      "description": "Required for all rank-and-file employees",
+      "law": "PD 851",
+      "amount": "1/12 of annual basic salary",
+      "due_date": "On or before December 24",
+      "mandatory": true
+    }
+  ],
+  
+  "leave_entitlements": [
+    {
+      "name": "Service Incentive Leave (SIL)",
+      "days": 5,
+      "description": "Paid leave after 1 year of service",
+      "article": "Labor Code Article 95",
+      "convertible_to_cash": true
+    },
+    {
+      "name": "Maternity Leave",
+      "days": 105,
+      "description": "For female employees (105 days, 120 for solo parents)",
+      "law": "RA 11210 (Expanded Maternity Leave)",
+      "conditions": "Normal delivery: 105 days; Cesarean: +15 days; Solo parent: +15 days"
+    },
+    {
+      "name": "Paternity Leave",
+      "days": 7,
+      "description": "For married male employees",
+      "law": "RA 8187",
+      "conditions": "First four children only"
+    },
+    {
+      "name": "Parental Leave (Solo Parents)",
+      "days": 7,
+      "description": "Additional leave for solo parents",
+      "law": "RA 8972 (Solo Parents Welfare Act)"
+    },
+    {
+      "name": "Special Leave for Women",
+      "days": 2,
+      "description": "For gynecological procedures",
+      "law": "RA 9710 (Magna Carta of Women)"
+    },
+    {
+      "name": "VAWC Leave",
+      "days": 10,
+      "description": "For victims of violence against women and children",
+      "law": "RA 9262"
+    }
+  ],
+  
+  "termination_rules": {
+    "just_causes": [
+      "Serious misconduct or willful disobedience",
+      "Gross and habitual neglect of duties",
+      "Fraud or willful breach of trust",
+      "Commission of crime against employer/family/representative",
+      "Other causes analogous to the foregoing"
+    ],
+    "authorized_causes": [
+      "Installation of labor-saving devices",
+      "Redundancy",
+      "Retrenchment to prevent losses",
+      "Closure or cessation of business operation",
+      "Disease (if continued employment prohibited by law or prejudicial to health)"
+    ],
+    "notice_requirements": {
+      "just_cause_notice": "Two written notices + hearing",
+      "authorized_cause_notice": "30 days written notice to employee and DOLE",
+      "article": "Labor Code Article 297-298"
+    },
+    "separation_pay": {
+      "redundancy": "1 month pay per year of service",
+      "retrenchment": "1 month pay or 1/2 month per year (whichever higher)",
+      "closure": "1 month pay per year of service",
+      "disease": "1 month pay or 1/2 month per year (whichever higher)",
+      "article": "Labor Code Article 298"
+    },
+    "probationary_termination": {
+      "rule": "May be terminated for failure to qualify",
+      "notice": "Reasonable standards must be made known",
+      "article": "Labor Code Article 281"
+    }
+  },
+  
+  "working_time_provisions": {
+    "normal_hours": "8 hours per day",
+    "compressed_workweek": "May exceed 8 hours if not exceeding 48 hours/week",
+    "overtime_pay": "+25% of regular rate (regular days)",
+    "overtime_rest_day": "+30% of regular rate",
+    "night_shift_differential": "+10% for work between 10pm-6am",
+    "holiday_pay": "Regular holidays: 100% (no work) or 200% (with work)",
+    "article": "Labor Code Articles 83-95"
+  },
+  
+  "special_protections": [
+    {
+      "name": "Security of Tenure",
+      "description": "Regular employees cannot be dismissed without just/authorized cause",
+      "article": "Labor Code Article 294"
+    },
+    {
+      "name": "Non-Diminution of Benefits",
+      "description": "Benefits cannot be reduced once granted",
+      "article": "Labor Code Article 100"
+    },
+    {
+      "name": "Equal Pay for Equal Work",
+      "description": "No discrimination in wages",
+      "article": "Labor Code Article 135"
+    },
+    {
+      "name": "No Involuntary Servitude",
+      "description": "No contract amounting to involuntary servitude is valid",
+      "article": "Civil Code Article 1703"
+    },
+    {
+      "name": "Payment in Legal Currency",
+      "description": "Wages must be paid in Philippine pesos",
+      "article": "Civil Code Article 1705, Labor Code Article 102"
+    },
+    {
+      "name": "Anti-Discrimination",
+      "description": "Protection against discrimination (age, sex, religion, etc.)",
+      "law": "Labor Code Article 135, RA 10911 (Anti-Age Discrimination)"
+    },
+    {
+      "name": "Data Privacy",
+      "description": "Employee personal data must be protected",
+      "law": "RA 10173 (Data Privacy Act of 2012)"
+    },
+    {
+      "name": "Anti-Sexual Harassment",
+      "description": "Workplace must be free from sexual harassment",
+      "law": "RA 7877 (Anti-Sexual Harassment Act)"
+    },
+    {
+      "name": "Safe Spaces Act",
+      "description": "Protection against gender-based harassment",
+      "law": "RA 11313 (Safe Spaces Act / Bawal Bastos Law)"
+    }
+  ],
+  
+  "household_service_rules": {
+    "compensation": "Must be reasonably compensated (free service is void)",
+    "lodging_food": "Free suitable quarters, adequate food, medical attendance",
+    "minor_education": "Elementary education for helpers under 18",
+    "contract_duration": "Max 2 years, renewable",
+    "working_hours": "Max 10 hours/day",
+    "vacation": "4 paid vacation days per month",
+    "humane_treatment": "Just and humane treatment, no physical violence",
+    "article": "Civil Code Articles 1689-1699"
+  },
+  
+  "validation_rules": {
+    "minimum_wage_check": {
+      "description": "Salary must meet minimum wage",
+      "article": "Labor Code Article 124",
+      "severity": "critical"
+    },
+    "working_hours_check": {
+      "description": "Normal working hours should not exceed 8 hours/day",
+      "article": "Labor Code Article 83",
+      "severity": "warning"
+    },
+    "probationary_period_check": {
+      "description": "Probationary period cannot exceed 6 months",
+      "article": "Labor Code Article 281",
+      "severity": "critical"
+    },
+    "rest_day_check": {
+      "description": "At least 24 consecutive hours rest per week",
+      "article": "Labor Code Article 91",
+      "severity": "critical"
+    },
+    "benefits_check": {
+      "description": "SSS, PhilHealth, Pag-IBIG, 13th month pay are mandatory",
+      "severity": "critical"
+    }
+  },
+  
+  "default_terms": {
+    "employment_type": "Regular",
+    "working_hours": "8 hours per day",
+    "work_schedule": "Monday to Saturday",
+    "rest_day": "Sunday",
+    "overtime_rate": "+25% regular days, +30% rest days",
+    "night_differential": "+10% for 10pm-6am shift",
+    "benefits": "SSS, PhilHealth, Pag-IBIG, 13th month pay"
+  },
+  
+  "prohibited_stipulations": {
+    "no_involuntary_servitude": "Any contract amounting to involuntary servitude is VOID",
+    "no_wage_withholding": "Cannot withhold wages except for debt due",
+    "no_free_household_service": "Household service without compensation is VOID",
+    "no_benefit_diminution": "Cannot reduce benefits already granted"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "law_name": "Philippine Civil Code - Sales",
+  "contract_type": "BUY_SELL",
+  "title": "Title VI - Contract of Sale",
+  "coverage": "Nature, obligations of vendor and vendee, delivery, warranties, remedies",
+  
+  "required_clauses": [
+    {
+      "name": "seller_name",
+      "description": "Name of the seller/vendor",
+      "article": "Article 1458",
+      "requirement": "Must be clearly identified",
+      "mandatory": true
+    },
+    {
+      "name": "buyer_name",
+      "description": "Name of the buyer/vendee",
+      "article": "Article 1458",
+      "requirement": "Must be clearly identified",
+      "mandatory": true
+    },
+    {
+      "name": "item_description",
+      "description": "Determinate thing being sold",
+      "article": "Article 1458",
+      "requirement": "Thing must be determinate and described",
+      "mandatory": true
+    },
+    {
+      "name": "purchase_price",
+      "description": "Price certain in money",
+      "article": "Article 1458",
+      "requirement": "Price must be certain and in money",
+      "mandatory": true
+    },
+    {
+      "name": "payment_terms",
+      "description": "When and how payment is made",
+      "article": "Article 1582",
+      "requirement": "Time and place of payment",
+      "default": "At time and place of delivery"
+    },
+    {
+      "name": "delivery_date",
+      "description": "When item is delivered",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
+    },
+    {
+      "name": "delivery_place",
+      "description": "Where item is delivered",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
+    },
+    {
+      "name": "delivery_method",
+      "description": "Where item is delivered",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
+    },
+    {
+      "name": "delivery_cost",
+      "description": "Who bears delivery cost",
+      "article": "Article 1497",
+      "requirement": "Transfer of control and possession",
+      "mandatory": true
+    }
+  ],
+  
+  "constraints": {
+    "purchase_price": {
+      "min": 0,
+      "description": "Price must be certain (zero price = donation, not sale)"
+    },
+    "installment_sales": {
+      "description": "Special rules apply for installment sales",
+      "article": "Article 1484"
+    }
+  },
+  
+  "seller_obligations": [
+    {
+      "obligation": "Transfer ownership of the thing sold",
+      "article": "Article 1495",
+      "mandatory": true
+    },
+    {
+      "obligation": "Deliver the thing sold",
+      "article": "Article 1495",
+      "mandatory": true
+    },
+    {
+      "obligation": "Warrant the thing sold",
+      "article": "Article 1495",
+      "mandatory": true
+    },
+    {
+      "obligation": "Deliver thing with accessions and accessories",
+      "article": "Article 1537",
+      "mandatory": true
+    },
+    {
+      "obligation": "Deliver in condition at time of perfection",
+      "article": "Article 1537",
+      "mandatory": true
+    }
+  ],
+  
+  "buyer_obligations": [
+    {
+      "obligation": "Accept delivery of the thing",
+      "article": "Article 1582",
+      "mandatory": true
+    },
+    {
+      "obligation": "Pay the purchase price",
+      "article": "Article 1582",
+      "mandatory": true
+    },
+    {
+      "obligation": "Pay at agreed time and place",
+      "article": "Article 1582",
+      "mandatory": true
+    }
+  ],
+  
+  "warranties": [
+    {
+      "type": "Against Eviction",
+      "article": "Article 1548",
+      "description": "Seller warrants buyer shall have legal and peaceful possession",
+      "automatic": true,
+      "waivable": false
+    },
+    {
+      "type": "Against Hidden Defects",
+      "article": "Article 1561",
+      "description": "Seller responsible for hidden defects rendering thing unfit",
+      "automatic": true,
+      "waivable": false
+    },
+    {
+      "type": "Right to Sell",
+      "article": "Article 1547",
+      "description": "Seller has right to sell at time ownership passes",
+      "automatic": true,
+      "waivable": false
+    },
+    {
+      "type": "Free from Encumbrances",
+      "article": "Article 1547",
+      "description": "Thing shall be free from undeclared charges",
+      "automatic": true,
+      "waivable": true
+    }
+  ],
+  
+  "transfer_of_ownership": {
+    "rule": "Ownership transfers upon actual or constructive delivery",
+    "article": "Article 1477",
+    "perfection": "Contract perfected at meeting of minds on thing and price",
+    "perfection_article": "Article 1475"
+  },
+  
+  "risk_of_loss": {
+    "general_rule": "Risk follows ownership",
+    "article": "Article 1504",
+    "exception": "Fungible things sold by weight/number/measure - risk passes upon delivery",
+    "exception_article": "Article 1480"
+  },
+  
+  "remedies_for_breach": {
+    "buyer_remedies": {
+      "breach_of_warranty": [
+        "Accept and set up breach by way of recoupment",
+        "Accept and sue for damages",
+        "Refuse to accept and sue for damages",
+        "Rescind and return goods, recover price"
+      ],
+      "article": "Article 1599"
+    },
+    "seller_remedies": {
+      "non_payment_immovable": "May rescind after judicial or notarial demand",
+      "article_immovable": "Article 1592",
+      "non_payment_movable": "Automatic rescission upon expiration if buyer doesn't appear/pay",
+      "article_movable": "Article 1593",
+      "installment_sales": [
+        "Exact fulfillment",
+        "Cancel sale (2+ installments unpaid)",
+        "Foreclose chattel mortgage (2+ installments unpaid)"
+      ],
+      "article_installment": "Article 1484"
+    }
+  },
+  
+  "special_provisions": {
+    "earnest_money": {
+      "rule": "Earnest money is part of price and proof of perfection",
+      "article": "Article 1482"
+    },
+    "right_to_withhold_delivery": {
+      "rule": "Seller may withhold delivery if buyer hasn't paid and no period fixed",
+      "article": "Article 1524"
+    },
+    "suspension_of_payment": {
+      "rule": "Buyer may suspend payment if disturbed in possession",
+      "article": "Article 1590"
+    },
+    "interest_on_price": {
+      "when_owed": [
+        "If stipulated",
+        "If thing produces fruits/income",
+        "If buyer in default after demand"
+      ],
+      "article": "Article 1589"
+    },
+    "form_of_contract": {
+      "rule": "May be written, oral, or inferred from conduct (subject to Statute of Frauds)",
+      "article": "Article 1483"
+    }
+  },
+  
+  "installment_sales_rules": {
+    "vendor_remedies": {
+      "description": "Special remedies for personal property sold on installment",
+      "article": "Article 1484",
+      "remedies": [
+        "Exact fulfillment if vendee fails to pay",
+        "Cancel sale if 2+ installments unpaid",
+        "Foreclose chattel mortgage if 2+ installments unpaid"
+      ]
+    }
+  },
+  
+  "validation_rules": {
+    "licit_thing_check": {
+      "description": "Thing must be licit (lawful)",
+      "article": "Article 1459",
+      "severity": "critical"
+    },
+    "right_to_transfer_check": {
+      "description": "Vendor must have right to transfer ownership",
+      "article": "Article 1459",
+      "severity": "critical"
+    },
+    "price_certainty_check": {
+      "description": "Price must be certain",
+      "article": "Article 1458",
+      "severity": "critical"
+    },
+    "determinate_thing_check": {
+      "description": "Thing must be determinate",
+      "article": "Article 1458",
+      "severity": "critical"
+    },
+    "payment_terms_check": {
+      "description": "If not stipulated, payment at delivery",
+      "article": "Article 1582",
+      "severity": "warning"
+    }
+  },
+  
+  "default_terms": {
+    "sale_type": "Absolute sale",
+    "payment_time": "At time of delivery",
+    "payment_place": "At place of delivery",
+    "delivery_condition": "In condition at time of perfection",
+    "warranties": "All implied warranties apply unless waived",
+    "risk_of_loss": "Passes to buyer upon delivery (or ownership transfer for specific things)"
+  },
+  
+  "statute_of_frauds": {
+    "description": "Certain sales must be in writing to be enforceable",
+    "applies_to": [
+      "Sale of real property",
+      "Sale of personal property PHP 500 or more",
+      "Sale not to be performed within one year"
+    ],
+    "note": "Oral contract is valid but not enforceable by action"
+  }
+}

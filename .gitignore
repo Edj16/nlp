@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+kontrata_env/
+.venv/
+
+# ML / Torch
+*.pt
+*.pth
+
+# OS
+.DS_Store
+Thumbs.db
